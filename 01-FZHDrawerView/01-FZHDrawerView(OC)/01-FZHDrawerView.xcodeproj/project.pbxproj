@@ -1,0 +1,540 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D6CB803F1D542FED005A442F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D6CB803E1D542FED005A442F /* main.m */; };
+		D6CB80421D542FED005A442F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D6CB80411D542FED005A442F /* AppDelegate.m */; };
+		D6CB80481D542FED005A442F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6CB80461D542FED005A442F /* Main.storyboard */; };
+		D6CB804A1D542FED005A442F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6CB80491D542FED005A442F /* Assets.xcassets */; };
+		D6CB804D1D542FED005A442F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6CB804B1D542FED005A442F /* LaunchScreen.storyboard */; };
+		D6CB80581D542FED005A442F /* _1_FZHDrawerViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D6CB80571D542FED005A442F /* _1_FZHDrawerViewTests.m */; };
+		D6CB80631D542FED005A442F /* _1_FZHDrawerViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D6CB80621D542FED005A442F /* _1_FZHDrawerViewUITests.m */; };
+		D6CB80AF1D543541005A442F /* LeftView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6CB80AE1D543541005A442F /* LeftView.m */; };
+		D6CB80B21D54355E005A442F /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6CB80B11D54355E005A442F /* MainViewController.m */; };
+		D6CB80B51D543A4E005A442F /* SubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6CB80B41D543A4E005A442F /* SubViewController.m */; };
+		D6CBED511D56DDA60045BD9C /* MainView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6CBED501D56DDA60045BD9C /* MainView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D6CB80541D542FED005A442F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D6CB80321D542FED005A442F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D6CB80391D542FED005A442F;
+			remoteInfo = "01-FZHDrawerView";
+		};
+		D6CB805F1D542FED005A442F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D6CB80321D542FED005A442F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D6CB80391D542FED005A442F;
+			remoteInfo = "01-FZHDrawerView";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D6CB803A1D542FED005A442F /* 01-FZHDrawerView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "01-FZHDrawerView.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6CB803E1D542FED005A442F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D6CB80401D542FED005A442F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D6CB80411D542FED005A442F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D6CB80471D542FED005A442F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D6CB80491D542FED005A442F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D6CB804C1D542FED005A442F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D6CB804E1D542FED005A442F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6CB80531D542FED005A442F /* 01-FZHDrawerViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "01-FZHDrawerViewTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6CB80571D542FED005A442F /* _1_FZHDrawerViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _1_FZHDrawerViewTests.m; sourceTree = "<group>"; };
+		D6CB80591D542FED005A442F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6CB805E1D542FED005A442F /* 01-FZHDrawerViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "01-FZHDrawerViewUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6CB80621D542FED005A442F /* _1_FZHDrawerViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _1_FZHDrawerViewUITests.m; sourceTree = "<group>"; };
+		D6CB80641D542FED005A442F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6CB80AD1D543541005A442F /* LeftView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftView.h; sourceTree = "<group>"; };
+		D6CB80AE1D543541005A442F /* LeftView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftView.m; sourceTree = "<group>"; };
+		D6CB80B01D54355E005A442F /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		D6CB80B11D54355E005A442F /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		D6CB80B31D543A4E005A442F /* SubViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubViewController.h; sourceTree = "<group>"; };
+		D6CB80B41D543A4E005A442F /* SubViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubViewController.m; sourceTree = "<group>"; };
+		D6CBED4F1D56DDA60045BD9C /* MainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainView.h; sourceTree = "<group>"; };
+		D6CBED501D56DDA60045BD9C /* MainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D6CB80371D542FED005A442F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6CB80501D542FED005A442F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6CB805B1D542FED005A442F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D6CB80311D542FED005A442F = {
+			isa = PBXGroup;
+			children = (
+				D6CB803C1D542FED005A442F /* 01-FZHDrawerView */,
+				D6CB80561D542FED005A442F /* 01-FZHDrawerViewTests */,
+				D6CB80611D542FED005A442F /* 01-FZHDrawerViewUITests */,
+				D6CB803B1D542FED005A442F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D6CB803B1D542FED005A442F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D6CB803A1D542FED005A442F /* 01-FZHDrawerView.app */,
+				D6CB80531D542FED005A442F /* 01-FZHDrawerViewTests.xctest */,
+				D6CB805E1D542FED005A442F /* 01-FZHDrawerViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D6CB803C1D542FED005A442F /* 01-FZHDrawerView */ = {
+			isa = PBXGroup;
+			children = (
+				D6CB80401D542FED005A442F /* AppDelegate.h */,
+				D6CB80411D542FED005A442F /* AppDelegate.m */,
+				D6CB80B01D54355E005A442F /* MainViewController.h */,
+				D6CB80B11D54355E005A442F /* MainViewController.m */,
+				D6CB80B31D543A4E005A442F /* SubViewController.h */,
+				D6CB80B41D543A4E005A442F /* SubViewController.m */,
+				D6CBED4F1D56DDA60045BD9C /* MainView.h */,
+				D6CBED501D56DDA60045BD9C /* MainView.m */,
+				D6CB80AD1D543541005A442F /* LeftView.h */,
+				D6CB80AE1D543541005A442F /* LeftView.m */,
+				D6CB80461D542FED005A442F /* Main.storyboard */,
+				D6CB80491D542FED005A442F /* Assets.xcassets */,
+				D6CB804B1D542FED005A442F /* LaunchScreen.storyboard */,
+				D6CB804E1D542FED005A442F /* Info.plist */,
+				D6CB803D1D542FED005A442F /* Supporting Files */,
+			);
+			path = "01-FZHDrawerView";
+			sourceTree = "<group>";
+		};
+		D6CB803D1D542FED005A442F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D6CB803E1D542FED005A442F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D6CB80561D542FED005A442F /* 01-FZHDrawerViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				D6CB80571D542FED005A442F /* _1_FZHDrawerViewTests.m */,
+				D6CB80591D542FED005A442F /* Info.plist */,
+			);
+			path = "01-FZHDrawerViewTests";
+			sourceTree = "<group>";
+		};
+		D6CB80611D542FED005A442F /* 01-FZHDrawerViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D6CB80621D542FED005A442F /* _1_FZHDrawerViewUITests.m */,
+				D6CB80641D542FED005A442F /* Info.plist */,
+			);
+			path = "01-FZHDrawerViewUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D6CB80391D542FED005A442F /* 01-FZHDrawerView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6CB80671D542FED005A442F /* Build configuration list for PBXNativeTarget "01-FZHDrawerView" */;
+			buildPhases = (
+				D6CB80361D542FED005A442F /* Sources */,
+				D6CB80371D542FED005A442F /* Frameworks */,
+				D6CB80381D542FED005A442F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "01-FZHDrawerView";
+			productName = "01-FZHDrawerView";
+			productReference = D6CB803A1D542FED005A442F /* 01-FZHDrawerView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D6CB80521D542FED005A442F /* 01-FZHDrawerViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6CB806A1D542FED005A442F /* Build configuration list for PBXNativeTarget "01-FZHDrawerViewTests" */;
+			buildPhases = (
+				D6CB804F1D542FED005A442F /* Sources */,
+				D6CB80501D542FED005A442F /* Frameworks */,
+				D6CB80511D542FED005A442F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D6CB80551D542FED005A442F /* PBXTargetDependency */,
+			);
+			name = "01-FZHDrawerViewTests";
+			productName = "01-FZHDrawerViewTests";
+			productReference = D6CB80531D542FED005A442F /* 01-FZHDrawerViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D6CB805D1D542FED005A442F /* 01-FZHDrawerViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6CB806D1D542FED005A442F /* Build configuration list for PBXNativeTarget "01-FZHDrawerViewUITests" */;
+			buildPhases = (
+				D6CB805A1D542FED005A442F /* Sources */,
+				D6CB805B1D542FED005A442F /* Frameworks */,
+				D6CB805C1D542FED005A442F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D6CB80601D542FED005A442F /* PBXTargetDependency */,
+			);
+			name = "01-FZHDrawerViewUITests";
+			productName = "01-FZHDrawerViewUITests";
+			productReference = D6CB805E1D542FED005A442F /* 01-FZHDrawerViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D6CB80321D542FED005A442F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = FZH;
+				TargetAttributes = {
+					D6CB80391D542FED005A442F = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					D6CB80521D542FED005A442F = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = D6CB80391D542FED005A442F;
+					};
+					D6CB805D1D542FED005A442F = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = D6CB80391D542FED005A442F;
+					};
+				};
+			};
+			buildConfigurationList = D6CB80351D542FED005A442F /* Build configuration list for PBXProject "01-FZHDrawerView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D6CB80311D542FED005A442F;
+			productRefGroup = D6CB803B1D542FED005A442F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D6CB80391D542FED005A442F /* 01-FZHDrawerView */,
+				D6CB80521D542FED005A442F /* 01-FZHDrawerViewTests */,
+				D6CB805D1D542FED005A442F /* 01-FZHDrawerViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D6CB80381D542FED005A442F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6CB804D1D542FED005A442F /* LaunchScreen.storyboard in Resources */,
+				D6CB804A1D542FED005A442F /* Assets.xcassets in Resources */,
+				D6CB80481D542FED005A442F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6CB80511D542FED005A442F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6CB805C1D542FED005A442F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D6CB80361D542FED005A442F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6CB80AF1D543541005A442F /* LeftView.m in Sources */,
+				D6CB80B21D54355E005A442F /* MainViewController.m in Sources */,
+				D6CB80B51D543A4E005A442F /* SubViewController.m in Sources */,
+				D6CB80421D542FED005A442F /* AppDelegate.m in Sources */,
+				D6CB803F1D542FED005A442F /* main.m in Sources */,
+				D6CBED511D56DDA60045BD9C /* MainView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6CB804F1D542FED005A442F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6CB80581D542FED005A442F /* _1_FZHDrawerViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6CB805A1D542FED005A442F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6CB80631D542FED005A442F /* _1_FZHDrawerViewUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D6CB80551D542FED005A442F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D6CB80391D542FED005A442F /* 01-FZHDrawerView */;
+			targetProxy = D6CB80541D542FED005A442F /* PBXContainerItemProxy */;
+		};
+		D6CB80601D542FED005A442F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D6CB80391D542FED005A442F /* 01-FZHDrawerView */;
+			targetProxy = D6CB805F1D542FED005A442F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D6CB80461D542FED005A442F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D6CB80471D542FED005A442F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D6CB804B1D542FED005A442F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D6CB804C1D542FED005A442F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D6CB80651D542FED005A442F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D6CB80661D542FED005A442F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D6CB80681D542FED005A442F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "01-FZHDrawerView/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fengzhihao.-1-FZHDrawerView";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D6CB80691D542FED005A442F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "01-FZHDrawerView/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fengzhihao.-1-FZHDrawerView";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D6CB806B1D542FED005A442F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "01-FZHDrawerViewTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fengzhihao.-1-FZHDrawerViewTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/01-FZHDrawerView.app/01-FZHDrawerView";
+			};
+			name = Debug;
+		};
+		D6CB806C1D542FED005A442F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "01-FZHDrawerViewTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fengzhihao.-1-FZHDrawerViewTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/01-FZHDrawerView.app/01-FZHDrawerView";
+			};
+			name = Release;
+		};
+		D6CB806E1D542FED005A442F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "01-FZHDrawerViewUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fengzhihao.-1-FZHDrawerViewUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "01-FZHDrawerView";
+			};
+			name = Debug;
+		};
+		D6CB806F1D542FED005A442F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "01-FZHDrawerViewUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fengzhihao.-1-FZHDrawerViewUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "01-FZHDrawerView";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D6CB80351D542FED005A442F /* Build configuration list for PBXProject "01-FZHDrawerView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6CB80651D542FED005A442F /* Debug */,
+				D6CB80661D542FED005A442F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6CB80671D542FED005A442F /* Build configuration list for PBXNativeTarget "01-FZHDrawerView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6CB80681D542FED005A442F /* Debug */,
+				D6CB80691D542FED005A442F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6CB806A1D542FED005A442F /* Build configuration list for PBXNativeTarget "01-FZHDrawerViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6CB806B1D542FED005A442F /* Debug */,
+				D6CB806C1D542FED005A442F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6CB806D1D542FED005A442F /* Build configuration list for PBXNativeTarget "01-FZHDrawerViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6CB806E1D542FED005A442F /* Debug */,
+				D6CB806F1D542FED005A442F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D6CB80321D542FED005A442F /* Project object */;
+}
