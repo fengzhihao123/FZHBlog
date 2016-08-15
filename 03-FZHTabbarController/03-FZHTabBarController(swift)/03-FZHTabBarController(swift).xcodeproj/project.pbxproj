@@ -1,0 +1,572 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D66DFED21D5D9BD30005384B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66DFED11D5D9BD30005384B /* AppDelegate.swift */; };
+		D66DFED71D5D9BD30005384B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D66DFED51D5D9BD30005384B /* Main.storyboard */; };
+		D66DFED91D5D9BD30005384B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D66DFED81D5D9BD30005384B /* Assets.xcassets */; };
+		D66DFEDC1D5D9BD30005384B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D66DFEDA1D5D9BD30005384B /* LaunchScreen.storyboard */; };
+		D66DFEE71D5D9BD30005384B /* _3_FZHTabBarController_swift_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66DFEE61D5D9BD30005384B /* _3_FZHTabBarController_swift_Tests.swift */; };
+		D66DFEF21D5D9BD30005384B /* _3_FZHTabBarController_swift_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66DFEF11D5D9BD30005384B /* _3_FZHTabBarController_swift_UITests.swift */; };
+		D66DFF011D5D9C090005384B /* FZHTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66DFF001D5D9C090005384B /* FZHTabbarViewController.swift */; };
+		D66DFF031D5D9C580005384B /* FZHNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66DFF021D5D9C580005384B /* FZHNavigationController.swift */; };
+		D66DFF051D5DA11E0005384B /* FZHRootBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66DFF041D5DA11E0005384B /* FZHRootBaseViewController.swift */; };
+		D66DFF081D5DA14B0005384B /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66DFF071D5DA14B0005384B /* FirstViewController.swift */; };
+		D66DFF0A1D5DA19F0005384B /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66DFF091D5DA19F0005384B /* ThirdViewController.swift */; };
+		D66DFF0C1D5DA1BA0005384B /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66DFF0B1D5DA1BA0005384B /* SecondViewController.swift */; };
+		D66DFF0E1D5DA1C30005384B /* FourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66DFF0D1D5DA1C30005384B /* FourViewController.swift */; };
+		D66DFF101D5DA30C0005384B /* CustomTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66DFF0F1D5DA30C0005384B /* CustomTabbarController.swift */; };
+		D66DFF121D5DA5950005384B /* SubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66DFF111D5DA5950005384B /* SubViewController.swift */; };
+		D6FC14361D61A7DF00811E37 /* FZHTabbarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FC14351D61A7DF00811E37 /* FZHTabbarButton.swift */; };
+		D6FC14381D61AE2300811E37 /* FZHTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FC14371D61AE2300811E37 /* FZHTabBar.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D66DFEE31D5D9BD30005384B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D66DFEC61D5D9BD30005384B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D66DFECD1D5D9BD30005384B;
+			remoteInfo = "03-FZHTabBarController(swift)";
+		};
+		D66DFEEE1D5D9BD30005384B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D66DFEC61D5D9BD30005384B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D66DFECD1D5D9BD30005384B;
+			remoteInfo = "03-FZHTabBarController(swift)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D66DFECE1D5D9BD30005384B /* 03-FZHTabBarController(swift).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "03-FZHTabBarController(swift).app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D66DFED11D5D9BD30005384B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D66DFED61D5D9BD30005384B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D66DFED81D5D9BD30005384B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D66DFEDB1D5D9BD30005384B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D66DFEDD1D5D9BD30005384B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D66DFEE21D5D9BD30005384B /* 03-FZHTabBarController(swift)Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "03-FZHTabBarController(swift)Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D66DFEE61D5D9BD30005384B /* _3_FZHTabBarController_swift_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _3_FZHTabBarController_swift_Tests.swift; sourceTree = "<group>"; };
+		D66DFEE81D5D9BD30005384B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D66DFEED1D5D9BD30005384B /* 03-FZHTabBarController(swift)UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "03-FZHTabBarController(swift)UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D66DFEF11D5D9BD30005384B /* _3_FZHTabBarController_swift_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _3_FZHTabBarController_swift_UITests.swift; sourceTree = "<group>"; };
+		D66DFEF31D5D9BD30005384B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D66DFF001D5D9C090005384B /* FZHTabbarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FZHTabbarViewController.swift; path = FZHTabbarController/FZHTabbarViewController.swift; sourceTree = "<group>"; };
+		D66DFF021D5D9C580005384B /* FZHNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FZHNavigationController.swift; path = FZHTabbarController/FZHNavigationController.swift; sourceTree = "<group>"; };
+		D66DFF041D5DA11E0005384B /* FZHRootBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FZHRootBaseViewController.swift; path = FZHTabbarController/FZHRootBaseViewController.swift; sourceTree = "<group>"; };
+		D66DFF071D5DA14B0005384B /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FirstViewController.swift; path = Example/FirstViewController.swift; sourceTree = "<group>"; };
+		D66DFF091D5DA19F0005384B /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ThirdViewController.swift; path = Example/ThirdViewController.swift; sourceTree = "<group>"; };
+		D66DFF0B1D5DA1BA0005384B /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SecondViewController.swift; path = Example/SecondViewController.swift; sourceTree = "<group>"; };
+		D66DFF0D1D5DA1C30005384B /* FourViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FourViewController.swift; path = Example/FourViewController.swift; sourceTree = "<group>"; };
+		D66DFF0F1D5DA30C0005384B /* CustomTabbarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomTabbarController.swift; path = Example/CustomTabbarController.swift; sourceTree = "<group>"; };
+		D66DFF111D5DA5950005384B /* SubViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SubViewController.swift; path = Example/SubViewController.swift; sourceTree = "<group>"; };
+		D6FC14351D61A7DF00811E37 /* FZHTabbarButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FZHTabbarButton.swift; path = FZHTabbarController/View/FZHTabbarButton.swift; sourceTree = "<group>"; };
+		D6FC14371D61AE2300811E37 /* FZHTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FZHTabBar.swift; path = FZHTabbarController/View/FZHTabBar.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D66DFECB1D5D9BD30005384B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D66DFEDF1D5D9BD30005384B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D66DFEEA1D5D9BD30005384B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D66DFEC51D5D9BD30005384B = {
+			isa = PBXGroup;
+			children = (
+				D66DFED01D5D9BD30005384B /* 03-FZHTabBarController(swift) */,
+				D66DFEE51D5D9BD30005384B /* 03-FZHTabBarController(swift)Tests */,
+				D66DFEF01D5D9BD30005384B /* 03-FZHTabBarController(swift)UITests */,
+				D66DFECF1D5D9BD30005384B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D66DFECF1D5D9BD30005384B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D66DFECE1D5D9BD30005384B /* 03-FZHTabBarController(swift).app */,
+				D66DFEE21D5D9BD30005384B /* 03-FZHTabBarController(swift)Tests.xctest */,
+				D66DFEED1D5D9BD30005384B /* 03-FZHTabBarController(swift)UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D66DFED01D5D9BD30005384B /* 03-FZHTabBarController(swift) */ = {
+			isa = PBXGroup;
+			children = (
+				D66DFF061D5DA1290005384B /* Example */,
+				D66DFEFF1D5D9BE60005384B /* FZHTabbarController */,
+				D66DFED11D5D9BD30005384B /* AppDelegate.swift */,
+				D66DFED51D5D9BD30005384B /* Main.storyboard */,
+				D66DFED81D5D9BD30005384B /* Assets.xcassets */,
+				D66DFEDA1D5D9BD30005384B /* LaunchScreen.storyboard */,
+				D66DFEDD1D5D9BD30005384B /* Info.plist */,
+			);
+			path = "03-FZHTabBarController(swift)";
+			sourceTree = "<group>";
+		};
+		D66DFEE51D5D9BD30005384B /* 03-FZHTabBarController(swift)Tests */ = {
+			isa = PBXGroup;
+			children = (
+				D66DFEE61D5D9BD30005384B /* _3_FZHTabBarController_swift_Tests.swift */,
+				D66DFEE81D5D9BD30005384B /* Info.plist */,
+			);
+			path = "03-FZHTabBarController(swift)Tests";
+			sourceTree = "<group>";
+		};
+		D66DFEF01D5D9BD30005384B /* 03-FZHTabBarController(swift)UITests */ = {
+			isa = PBXGroup;
+			children = (
+				D66DFEF11D5D9BD30005384B /* _3_FZHTabBarController_swift_UITests.swift */,
+				D66DFEF31D5D9BD30005384B /* Info.plist */,
+			);
+			path = "03-FZHTabBarController(swift)UITests";
+			sourceTree = "<group>";
+		};
+		D66DFEFF1D5D9BE60005384B /* FZHTabbarController */ = {
+			isa = PBXGroup;
+			children = (
+				D6FC14341D61A7C000811E37 /* View */,
+				D66DFF001D5D9C090005384B /* FZHTabbarViewController.swift */,
+				D66DFF021D5D9C580005384B /* FZHNavigationController.swift */,
+				D66DFF041D5DA11E0005384B /* FZHRootBaseViewController.swift */,
+			);
+			name = FZHTabbarController;
+			sourceTree = "<group>";
+		};
+		D66DFF061D5DA1290005384B /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				D66DFF071D5DA14B0005384B /* FirstViewController.swift */,
+				D66DFF0B1D5DA1BA0005384B /* SecondViewController.swift */,
+				D66DFF091D5DA19F0005384B /* ThirdViewController.swift */,
+				D66DFF0D1D5DA1C30005384B /* FourViewController.swift */,
+				D66DFF0F1D5DA30C0005384B /* CustomTabbarController.swift */,
+				D66DFF111D5DA5950005384B /* SubViewController.swift */,
+			);
+			name = Example;
+			sourceTree = "<group>";
+		};
+		D6FC14341D61A7C000811E37 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D6FC14351D61A7DF00811E37 /* FZHTabbarButton.swift */,
+				D6FC14371D61AE2300811E37 /* FZHTabBar.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D66DFECD1D5D9BD30005384B /* 03-FZHTabBarController(swift) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D66DFEF61D5D9BD30005384B /* Build configuration list for PBXNativeTarget "03-FZHTabBarController(swift)" */;
+			buildPhases = (
+				D66DFECA1D5D9BD30005384B /* Sources */,
+				D66DFECB1D5D9BD30005384B /* Frameworks */,
+				D66DFECC1D5D9BD30005384B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "03-FZHTabBarController(swift)";
+			productName = "03-FZHTabBarController(swift)";
+			productReference = D66DFECE1D5D9BD30005384B /* 03-FZHTabBarController(swift).app */;
+			productType = "com.apple.product-type.application";
+		};
+		D66DFEE11D5D9BD30005384B /* 03-FZHTabBarController(swift)Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D66DFEF91D5D9BD30005384B /* Build configuration list for PBXNativeTarget "03-FZHTabBarController(swift)Tests" */;
+			buildPhases = (
+				D66DFEDE1D5D9BD30005384B /* Sources */,
+				D66DFEDF1D5D9BD30005384B /* Frameworks */,
+				D66DFEE01D5D9BD30005384B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D66DFEE41D5D9BD30005384B /* PBXTargetDependency */,
+			);
+			name = "03-FZHTabBarController(swift)Tests";
+			productName = "03-FZHTabBarController(swift)Tests";
+			productReference = D66DFEE21D5D9BD30005384B /* 03-FZHTabBarController(swift)Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D66DFEEC1D5D9BD30005384B /* 03-FZHTabBarController(swift)UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D66DFEFC1D5D9BD30005384B /* Build configuration list for PBXNativeTarget "03-FZHTabBarController(swift)UITests" */;
+			buildPhases = (
+				D66DFEE91D5D9BD30005384B /* Sources */,
+				D66DFEEA1D5D9BD30005384B /* Frameworks */,
+				D66DFEEB1D5D9BD30005384B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D66DFEEF1D5D9BD30005384B /* PBXTargetDependency */,
+			);
+			name = "03-FZHTabBarController(swift)UITests";
+			productName = "03-FZHTabBarController(swift)UITests";
+			productReference = D66DFEED1D5D9BD30005384B /* 03-FZHTabBarController(swift)UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D66DFEC61D5D9BD30005384B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = FZH;
+				TargetAttributes = {
+					D66DFECD1D5D9BD30005384B = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					D66DFEE11D5D9BD30005384B = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = D66DFECD1D5D9BD30005384B;
+					};
+					D66DFEEC1D5D9BD30005384B = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = D66DFECD1D5D9BD30005384B;
+					};
+				};
+			};
+			buildConfigurationList = D66DFEC91D5D9BD30005384B /* Build configuration list for PBXProject "03-FZHTabBarController(swift)" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D66DFEC51D5D9BD30005384B;
+			productRefGroup = D66DFECF1D5D9BD30005384B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D66DFECD1D5D9BD30005384B /* 03-FZHTabBarController(swift) */,
+				D66DFEE11D5D9BD30005384B /* 03-FZHTabBarController(swift)Tests */,
+				D66DFEEC1D5D9BD30005384B /* 03-FZHTabBarController(swift)UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D66DFECC1D5D9BD30005384B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D66DFEDC1D5D9BD30005384B /* LaunchScreen.storyboard in Resources */,
+				D66DFED91D5D9BD30005384B /* Assets.xcassets in Resources */,
+				D66DFED71D5D9BD30005384B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D66DFEE01D5D9BD30005384B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D66DFEEB1D5D9BD30005384B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D66DFECA1D5D9BD30005384B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D66DFF101D5DA30C0005384B /* CustomTabbarController.swift in Sources */,
+				D66DFF0C1D5DA1BA0005384B /* SecondViewController.swift in Sources */,
+				D66DFF051D5DA11E0005384B /* FZHRootBaseViewController.swift in Sources */,
+				D66DFF031D5D9C580005384B /* FZHNavigationController.swift in Sources */,
+				D66DFF011D5D9C090005384B /* FZHTabbarViewController.swift in Sources */,
+				D66DFF0A1D5DA19F0005384B /* ThirdViewController.swift in Sources */,
+				D6FC14381D61AE2300811E37 /* FZHTabBar.swift in Sources */,
+				D66DFF081D5DA14B0005384B /* FirstViewController.swift in Sources */,
+				D66DFF121D5DA5950005384B /* SubViewController.swift in Sources */,
+				D66DFED21D5D9BD30005384B /* AppDelegate.swift in Sources */,
+				D66DFF0E1D5DA1C30005384B /* FourViewController.swift in Sources */,
+				D6FC14361D61A7DF00811E37 /* FZHTabbarButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D66DFEDE1D5D9BD30005384B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D66DFEE71D5D9BD30005384B /* _3_FZHTabBarController_swift_Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D66DFEE91D5D9BD30005384B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D66DFEF21D5D9BD30005384B /* _3_FZHTabBarController_swift_UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D66DFEE41D5D9BD30005384B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D66DFECD1D5D9BD30005384B /* 03-FZHTabBarController(swift) */;
+			targetProxy = D66DFEE31D5D9BD30005384B /* PBXContainerItemProxy */;
+		};
+		D66DFEEF1D5D9BD30005384B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D66DFECD1D5D9BD30005384B /* 03-FZHTabBarController(swift) */;
+			targetProxy = D66DFEEE1D5D9BD30005384B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D66DFED51D5D9BD30005384B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D66DFED61D5D9BD30005384B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D66DFEDA1D5D9BD30005384B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D66DFEDB1D5D9BD30005384B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D66DFEF41D5D9BD30005384B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D66DFEF51D5D9BD30005384B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D66DFEF71D5D9BD30005384B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "03-FZHTabBarController(swift)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fengzhihao.-3-FZHTabBarController-swift-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D66DFEF81D5D9BD30005384B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "03-FZHTabBarController(swift)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fengzhihao.-3-FZHTabBarController-swift-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D66DFEFA1D5D9BD30005384B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "03-FZHTabBarController(swift)Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fengzhihao.-3-FZHTabBarController-swift-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/03-FZHTabBarController(swift).app/03-FZHTabBarController(swift)";
+			};
+			name = Debug;
+		};
+		D66DFEFB1D5D9BD30005384B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "03-FZHTabBarController(swift)Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fengzhihao.-3-FZHTabBarController-swift-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/03-FZHTabBarController(swift).app/03-FZHTabBarController(swift)";
+			};
+			name = Release;
+		};
+		D66DFEFD1D5D9BD30005384B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "03-FZHTabBarController(swift)UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fengzhihao.-3-FZHTabBarController-swift-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "03-FZHTabBarController(swift)";
+			};
+			name = Debug;
+		};
+		D66DFEFE1D5D9BD30005384B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "03-FZHTabBarController(swift)UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fengzhihao.-3-FZHTabBarController-swift-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "03-FZHTabBarController(swift)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D66DFEC91D5D9BD30005384B /* Build configuration list for PBXProject "03-FZHTabBarController(swift)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D66DFEF41D5D9BD30005384B /* Debug */,
+				D66DFEF51D5D9BD30005384B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D66DFEF61D5D9BD30005384B /* Build configuration list for PBXNativeTarget "03-FZHTabBarController(swift)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D66DFEF71D5D9BD30005384B /* Debug */,
+				D66DFEF81D5D9BD30005384B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D66DFEF91D5D9BD30005384B /* Build configuration list for PBXNativeTarget "03-FZHTabBarController(swift)Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D66DFEFA1D5D9BD30005384B /* Debug */,
+				D66DFEFB1D5D9BD30005384B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D66DFEFC1D5D9BD30005384B /* Build configuration list for PBXNativeTarget "03-FZHTabBarController(swift)UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D66DFEFD1D5D9BD30005384B /* Debug */,
+				D66DFEFE1D5D9BD30005384B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D66DFEC61D5D9BD30005384B /* Project object */;
+}
