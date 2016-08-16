@@ -9,18 +9,6 @@
 import UIKit
 
 class FZHTabbarButton: UIButton {
-
-    var item: UITabBarItem{
-        set{
-            item.addObserver(self, forKeyPath:"1title", options: .New, context: nil)
-            item.addObserver(self, forKeyPath: "image", options: .New, context: nil)
-            item.addObserver(self, forKeyPath: "selectedImage", options: .New, context: nil)
-            self.addObserver(self, forKeyPath: "", options: .New, context: nil)
-        }
-        get{
-            return UITabBarItem.init()
-        }
-    }
     
     let tabbarImageRatio = 0.65
     
@@ -34,6 +22,10 @@ class FZHTabbarButton: UIButton {
         self.setTitleColor(UIColor.greenColor(), forState: .Selected)
         self.setTitleColor(UIColor.blackColor(), forState: .Normal)
     }
+//    dynamic var item = UITabBarItem.init()
+    dynamic var title = ""
+    dynamic var image = UIImage.init()
+    dynamic var selectedImage = UIImage.init()
     
 //    MARK: title
     override func titleRectForContentRect(contentRect: CGRect) -> CGRect {
@@ -51,18 +43,6 @@ class FZHTabbarButton: UIButton {
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
-    }
-    deinit{
-        self.item.removeObserver(self, forKeyPath: "1title")
-        self.item.removeObserver(self, forKeyPath: "image")
-        self.item.removeObserver(self, forKeyPath: "selectedImage")
-    }
-    override func observeValueForKeyPath(keyPath: String?, ofObject object: AnyObject?, change: [String : AnyObject]?, context: UnsafeMutablePointer<Void>) {
-        self.setTitle(self.item.title, forState: .Selected)
-        self.setTitle(self.item.title, forState: .Normal)
-        
-        self.setImage(self.item.image, forState: .Normal)
-        self.setImage(self.item.selectedImage, forState: .Selected)
     }
 
 }

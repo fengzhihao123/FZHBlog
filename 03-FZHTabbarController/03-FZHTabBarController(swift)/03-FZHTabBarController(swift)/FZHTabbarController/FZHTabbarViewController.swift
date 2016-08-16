@@ -15,7 +15,6 @@ class FZHTabbarViewController: UITabBarController,FZHTabBarDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTabbar()
-//        self.tabBar.tintColor = UIColor.blackColor()
     }
 //    delete origin tabbar
     override func viewWillAppear(animated: Bool) {

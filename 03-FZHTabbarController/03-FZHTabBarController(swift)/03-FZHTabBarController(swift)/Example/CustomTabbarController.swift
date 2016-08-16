@@ -22,9 +22,9 @@ class CustomTabbarController: FZHTabbarViewController {
         let fourVC = FourViewController()
         
         self.setupChildVC(firstVC, title: "first", imageName: "first", selectImageName: "first_select")
-        self.setupChildVC(secondVC, title: "second", imageName: "", selectImageName: "")
-        self.setupChildVC(thirdVC, title: "third", imageName: "", selectImageName: "")
-        self.setupChildVC(fourVC, title: "four", imageName: "", selectImageName: "")
+        self.setupChildVC(secondVC, title: "second", imageName: "second", selectImageName: "second_select")
+        self.setupChildVC(thirdVC, title: "third", imageName: "third", selectImageName: "third_select")
+        self.setupChildVC(fourVC, title: "four", imageName: "four", selectImageName: "four_select")
     }
     
 }
