@@ -16,6 +16,7 @@ class FZHTabbarButton: UIButton {
         super.init(frame: frame)
 //        1.图片居中
         self.imageView?.contentMode = .Center
+        self.adjustsImageWhenHighlighted = false
 //        2.文字居中
         self.titleLabel?.textAlignment = .Center
         self.titleLabel?.font = UIFont.systemFontOfSize(11)
@@ -44,5 +45,8 @@ class FZHTabbarButton: UIButton {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+
+//去掉父类在高亮时所作的操作
+//    -(void)setHighlighted:(BOOL)highlighted{}
 
 }

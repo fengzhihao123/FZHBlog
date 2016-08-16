@@ -44,6 +44,7 @@ class FZHTabBar: UIView {
         button.addTarget(self, action: #selector(buttonDidTouch), forControlEvents: .TouchDown)
         button = self.tabbarButton
        self.addSubview(self.tabbarButton)
+        
         //        默认选中
         if self.tabBarButtons.count == 1 {
             self.buttonDidTouch((self.tabBarButtons[0] as? FZHTabbarButton)!)
@@ -51,7 +52,7 @@ class FZHTabBar: UIView {
     }
     
     func buttonDidTouch(button: FZHTabbarButton) -> Void {
-
+        fzhTabbarDelegate.tabbar(self, formWhichItem: self.selectedButton.tag, toWhichItem: button.tag)
 //        控制器选中按钮
         self.selectedButton.selected = false
         button.selected = true
@@ -96,6 +97,7 @@ class FZHTabBar: UIView {
             button.setTitle(self.tabbarButtonTitleArray[index] as? String, forState: .Normal)
             button.setImage(self.tabbarButtonImageArray[index + 1] as? UIImage, forState: .Normal)
             button.setImage(self.tabbarButtonSelectedImageArray[index + 1] as?UIImage, forState: .Selected)
+            button.addTarget(self, action: #selector(buttonDidTouch), forControlEvents: .TouchUpInside)
              self.addSubview(button)
 //            3.绑定tag
             button.tag = index
