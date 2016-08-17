@@ -93,6 +93,7 @@ class FZHTabBar: UIView {
 //            2.设置按钮的frame
             let buttonX = CGFloat(index) * buttonW
             button.frame = CGRect(x: buttonX, y: CGFloat(buttonY), width: buttonW, height: buttonH)
+//            给button赋值
             button.setTitle(self.tabbarButtonTitleArray[index] as? String, forState: .Selected)
             button.setTitle(self.tabbarButtonTitleArray[index] as? String, forState: .Normal)
             button.setImage(self.tabbarButtonImageArray[index + 1] as? UIImage, forState: .Normal)

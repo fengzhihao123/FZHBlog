@@ -38,13 +38,15 @@ class FZHTabbarViewController: UITabBarController,FZHTabBarDelegate {
         self.selectedIndex = toWhichItem
     }
     
-    func setupChildVC(childVC: UIViewController,title: String,imageName: String,selectImageName: String){
+    func setupChildVC(childVC: UIViewController,title: String,imageName: String,selectImageName: String, isAnimation: TabbarHideStyle){
         
         childVC.title = title
         childVC.tabBarItem.image = UIImage.init(named: imageName)
 //        不在渲染图片
         childVC.tabBarItem.selectedImage = UIImage.init(named: selectImageName)?.imageWithRenderingMode(.AlwaysOriginal)
+        
         let navigationCtrl = FZHNavigationController.init(rootViewController: childVC)
+        navigationCtrl.tabbarHideStyle = isAnimation
         self.addChildViewController(navigationCtrl)
 //        添加tabbar内部按钮
         self.customTabBar!.addTabbarButtonWith(childVC.tabBarItem)

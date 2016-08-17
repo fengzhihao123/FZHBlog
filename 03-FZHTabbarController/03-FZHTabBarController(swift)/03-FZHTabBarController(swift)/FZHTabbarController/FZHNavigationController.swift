@@ -14,7 +14,7 @@ enum TabbarHideStyle {
     case TabbarHideWithNoAnimation
 }
 class FZHNavigationController: UINavigationController {
-    let tabbarHideStyle = TabbarHideStyle.TabbarHideWithAnimation
+    var tabbarHideStyle = TabbarHideStyle.TabbarHideWithNoAnimation
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,6 +36,7 @@ class FZHNavigationController: UINavigationController {
     override func pushViewController(viewController: UIViewController, animated: Bool) {
         if self.viewControllers.count > 0 {
             let rootVC = self.viewControllers[0]
+//            是否添加动画
             if tabbarHideStyle == TabbarHideStyle.TabbarHideWithAnimation {
                 UIView.animateWithDuration(0.35, animations: {
                     rootVC.tabBarController?.tabBar.transform = CGAffineTransformMakeTranslation(0, 64)

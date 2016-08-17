@@ -17,6 +17,7 @@
 		D6CBED531D5708120045BD9C /* LeftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CBED521D5708120045BD9C /* LeftView.swift */; };
 		D6CBED551D57081C0045BD9C /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CBED541D57081C0045BD9C /* MainView.swift */; };
 		D6CBED571D57082B0045BD9C /* SubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CBED561D57082B0045BD9C /* SubViewController.swift */; };
+		D6D9CB3E1D63E721009D3978 /* FZHLeftDrawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D9CB3D1D63E721009D3978 /* FZHLeftDrawerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		D6CBED521D5708120045BD9C /* LeftView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftView.swift; sourceTree = "<group>"; };
 		D6CBED541D57081C0045BD9C /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		D6CBED561D57082B0045BD9C /* SubViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubViewController.swift; sourceTree = "<group>"; };
+		D6D9CB3D1D63E721009D3978 /* FZHLeftDrawerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FZHLeftDrawerViewController.swift; path = Controller/FZHLeftDrawerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 		D6CB807B1D54301F005A442F /* 01-FZHDrawerView(swift) */ = {
 			isa = PBXGroup;
 			children = (
+				D6D9CB3C1D63E6ED009D3978 /* Controller */,
 				D6CB807C1D54301F005A442F /* AppDelegate.swift */,
 				D6CB807E1D54301F005A442F /* ViewController.swift */,
 				D6CBED561D57082B0045BD9C /* SubViewController.swift */,
@@ -132,6 +135,14 @@
 				D6CB809E1D54301F005A442F /* Info.plist */,
 			);
 			path = "01-FZHDrawerView(swift)UITests";
+			sourceTree = "<group>";
+		};
+		D6D9CB3C1D63E6ED009D3978 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D6D9CB3D1D63E721009D3978 /* FZHLeftDrawerViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,6 +281,7 @@
 				D6CBED571D57082B0045BD9C /* SubViewController.swift in Sources */,
 				D6CB807D1D54301F005A442F /* AppDelegate.swift in Sources */,
 				D6CBED531D5708120045BD9C /* LeftView.swift in Sources */,
+				D6D9CB3E1D63E721009D3978 /* FZHLeftDrawerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
