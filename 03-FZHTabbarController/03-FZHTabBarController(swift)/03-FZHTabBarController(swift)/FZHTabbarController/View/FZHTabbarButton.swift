@@ -11,24 +11,29 @@ import UIKit
 class FZHTabbarButton: UIButton {
     
     let tabbarImageRatio = 0.65
-    
+    var item : UITabBarItem = UITabBarItem(){
+        didSet{
+            self.setTitle(self.item.title, forState: .Normal)
+            self.setTitle(self.item.title, forState: .Selected)
+            
+            self.setImage(self.item.image, forState: .Normal)
+            self.setImage(self.item.selectedImage, forState: .Selected)
+        }
+    }
     override init(frame: CGRect) {
         super.init(frame: frame)
-//        1.图片居中
+//        图片居中
         self.imageView?.contentMode = .Center
 //        去掉高亮状态
         self.adjustsImageWhenHighlighted = false
-//        2.文字居中
+//        文字居中
         self.titleLabel?.textAlignment = .Center
         self.titleLabel?.font = UIFont.systemFontOfSize(11)
+//        title两种状态的颜色
         self.setTitleColor(UIColor.greenColor(), forState: .Selected)
         self.setTitleColor(UIColor.blackColor(), forState: .Normal)
     }
-//    dynamic var item = UITabBarItem.init()
-    dynamic var title = ""
-    dynamic var image = UIImage.init()
-    dynamic var selectedImage = UIImage.init()
-    
+
 //    MARK: title
     override func titleRectForContentRect(contentRect: CGRect) -> CGRect {
         let titleY = contentRect.size.height * CGFloat(tabbarImageRatio)
