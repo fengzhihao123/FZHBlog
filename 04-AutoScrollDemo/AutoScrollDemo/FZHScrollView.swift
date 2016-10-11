@@ -16,7 +16,7 @@ class FZHScrollView: UIView,UIScrollViewDelegate {
     var fzhSuperView = UIView()
     var fzhFrame = CGRect()
     var timer = Timer.init()
-    
+    var pageNum = 1
     var fzhPicArray:NSMutableArray = []
     
     override init(frame: CGRect) {
@@ -59,12 +59,31 @@ class FZHScrollView: UIView,UIScrollViewDelegate {
     }
    
     func setupTimers() -> Void {
-        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(scrollViewAutoScroll), userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(scrollViewAutoScroll), userInfo: nil, repeats: true)
     }
     
     func scrollViewAutoScroll() -> Void {
-        let offsetX = scrollView.contentOffset.x
-        scrollView.contentOffset.x = offsetX + SCREEN_WIDTH
+        if pageNum != fzhPicArray.count - 1 {
+            pageNum = pageNum + 1
+            pageCtrl.currentPage = pageNum - 1
+        }
+        setScrollViewPageImage(pageNum: pageNum)
+    }
+    
+    func setScrollViewPageImage(pageNum: Int) -> Void {
+        if pageNum == fzhPicArray.count - 1 {
+            UIView.animate(withDuration: 1, animations: { 
+                self.scrollView.contentOffset.x = CGFloat(pageNum) * self.SCREEN_WIDTH
+                }, completion: { (true) in
+                    self.pageNum = 1
+                    self.scrollView.contentOffset.x = self.SCREEN_WIDTH
+                    self.pageCtrl.currentPage = 0
+            })
+        }else{
+            UIView.animate(withDuration: 1) {
+                self.scrollView.contentOffset.x = CGFloat(pageNum) * self.SCREEN_WIDTH
+            }
+        }
     }
     
     func setupPageCtrl() -> Void {
@@ -75,30 +94,22 @@ class FZHScrollView: UIView,UIScrollViewDelegate {
         self.addSubview(pageCtrl)
     }
     
-    //MARK:scroll view delegate
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        let offsetX = scrollView.contentOffset.x
-        if offsetX < SCREEN_WIDTH/2 {
-            scrollView.contentOffset.x = SCREEN_WIDTH * CGFloat(fzhPicArray.count - 2)
-            pageCtrl.currentPage = fzhPicArray.count - 2
-        }else if offsetX > SCREEN_WIDTH * CGFloat(fzhPicArray.count - 2) + SCREEN_WIDTH/2{
-            scrollView.contentOffset.x = SCREEN_WIDTH
-            pageCtrl.currentPage = 0
-        }else{
-            let pageIndex = offsetX/SCREEN_WIDTH - 1
-            pageCtrl.currentPage = Int(pageIndex)
-        }
-    }
-   
     func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
         timer.invalidate()
     }
     
     func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
-        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(scrollViewAutoScroll), userInfo: nil, repeats: true)
+        delay(3) {
+           self.setupTimers()
+        }
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    func delay(_ timeInterval: TimeInterval, _ block: @escaping ()->Void) {
+        let after = DispatchTime.now() + timeInterval
+        DispatchQueue.main.asyncAfter(deadline: after, execute: block)
+    }
+    
 }
