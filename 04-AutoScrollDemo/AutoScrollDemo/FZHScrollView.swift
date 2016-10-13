@@ -71,18 +71,15 @@ class FZHScrollView: UIView,UIScrollViewDelegate {
     }
     
     func setScrollViewPageImage(pageNum: Int) -> Void {
-        if pageNum == fzhPicArray.count - 1 {
-            UIView.animate(withDuration: 1, animations: { 
-                self.scrollView.contentOffset.x = CGFloat(pageNum) * self.SCREEN_WIDTH
-                }, completion: { (true) in
-                    self.pageNum = 1
-                    self.scrollView.contentOffset.x = self.SCREEN_WIDTH
-                    self.pageCtrl.currentPage = 0
-            })
+       
+        if scrollView.contentOffset.x == 0 {
+            scrollView.contentOffset.x = CGFloat(fzhPicArray.count - 2) * SCREEN_WIDTH
+        }else if scrollView.contentOffset.x == CGFloat(fzhPicArray.count - 1) * SCREEN_WIDTH{
+            scrollView.contentOffset.x = SCREEN_WIDTH
         }else{
-            UIView.animate(withDuration: 1) {
-                self.scrollView.contentOffset.x = CGFloat(pageNum) * self.SCREEN_WIDTH
-            }
+            var offsetX = scrollView.contentOffset.x
+            offsetX = offsetX + SCREEN_WIDTH
+            scrollView.contentOffset.x = offsetX
         }
     }
     
@@ -94,22 +91,28 @@ class FZHScrollView: UIView,UIScrollViewDelegate {
         self.addSubview(pageCtrl)
     }
     
+    //MARK: UIScrollViewDelegate
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if scrollView.contentOffset.x == 0 {//如果在第0个位置，把滑动位置设置为最后一张
+            scrollView.contentOffset = CGPoint(x: CGFloat(fzhPicArray.count - 2) * SCREEN_WIDTH, y:  0)
+            pageCtrl.currentPage = fzhPicArray.count - 3
+        }else if scrollView.contentOffset.x == CGFloat(fzhPicArray.count - 1) * SCREEN_WIDTH{//如果在第imageNum + 1个位置，把滑动位置设置为第一张
+            scrollView.contentOffset = CGPoint(x: SCREEN_WIDTH, y: 0)
+            pageCtrl.currentPage = 0
+        }else{
+            pageCtrl.currentPage = Int((scrollView.contentOffset.x + SCREEN_WIDTH * 0.5)/SCREEN_WIDTH) - 1
+        }
+    }
+    
     func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
         timer.invalidate()
     }
     
     func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
-        delay(3) {
-           self.setupTimers()
-        }
+        self.setupTimers()
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    func delay(_ timeInterval: TimeInterval, _ block: @escaping ()->Void) {
-        let after = DispatchTime.now() + timeInterval
-        DispatchQueue.main.asyncAfter(deadline: after, execute: block)
-    }
-    
 }
