@@ -2,7 +2,7 @@
 //  SubViewController.swift
 //  01-FZHDrawerView(swift)
 //
-//  Created by 冯志浩 on 16/8/7.
+//  Created by 冯志浩 on 16/10/13.
 //  Copyright © 2016年 FZH. All rights reserved.
 //
 
@@ -12,10 +12,6 @@ class SubViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Sub"
-        view.backgroundColor = UIColor.brownColor()
-        // Do any additional setup after loading the view.
+        view.backgroundColor = UIColor.blue
     }
-
-    
 }

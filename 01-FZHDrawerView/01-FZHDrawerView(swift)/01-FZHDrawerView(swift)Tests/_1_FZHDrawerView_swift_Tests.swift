@@ -2,7 +2,7 @@
 //  _1_FZHDrawerView_swift_Tests.swift
 //  01-FZHDrawerView(swift)Tests
 //
-//  Created by 冯志浩 on 16/8/5.
+//  Created by 冯志浩 on 16/10/13.
 //  Copyright © 2016年 FZH. All rights reserved.
 //
 
@@ -28,7 +28,7 @@ class _1_FZHDrawerView_swift_Tests: XCTestCase {
     
     func testPerformanceExample() {
         // This is an example of a performance test case.
-        self.measureBlock {
+        self.measure {
             // Put the code you want to measure the time of here.
         }
     }

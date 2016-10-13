@@ -7,72 +7,70 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D6CB807D1D54301F005A442F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CB807C1D54301F005A442F /* AppDelegate.swift */; };
-		D6CB807F1D54301F005A442F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CB807E1D54301F005A442F /* ViewController.swift */; };
-		D6CB80821D54301F005A442F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6CB80801D54301F005A442F /* Main.storyboard */; };
-		D6CB80841D54301F005A442F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6CB80831D54301F005A442F /* Assets.xcassets */; };
-		D6CB80871D54301F005A442F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6CB80851D54301F005A442F /* LaunchScreen.storyboard */; };
-		D6CB80921D54301F005A442F /* _1_FZHDrawerView_swift_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CB80911D54301F005A442F /* _1_FZHDrawerView_swift_Tests.swift */; };
-		D6CB809D1D54301F005A442F /* _1_FZHDrawerView_swift_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CB809C1D54301F005A442F /* _1_FZHDrawerView_swift_UITests.swift */; };
-		D6CBED531D5708120045BD9C /* LeftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CBED521D5708120045BD9C /* LeftView.swift */; };
-		D6CBED551D57081C0045BD9C /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CBED541D57081C0045BD9C /* MainView.swift */; };
-		D6CBED571D57082B0045BD9C /* SubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CBED561D57082B0045BD9C /* SubViewController.swift */; };
-		D6D9CB3E1D63E721009D3978 /* FZHLeftDrawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D9CB3D1D63E721009D3978 /* FZHLeftDrawerViewController.swift */; };
+		D6F0DA821DAF331000D0578C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F0DA811DAF331000D0578C /* AppDelegate.swift */; };
+		D6F0DA841DAF331000D0578C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F0DA831DAF331000D0578C /* ViewController.swift */; };
+		D6F0DA871DAF331000D0578C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6F0DA851DAF331000D0578C /* Main.storyboard */; };
+		D6F0DA891DAF331000D0578C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6F0DA881DAF331000D0578C /* Assets.xcassets */; };
+		D6F0DA8C1DAF331000D0578C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6F0DA8A1DAF331000D0578C /* LaunchScreen.storyboard */; };
+		D6F0DA971DAF331000D0578C /* _1_FZHDrawerView_swift_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F0DA961DAF331000D0578C /* _1_FZHDrawerView_swift_Tests.swift */; };
+		D6F0DAA21DAF331000D0578C /* _1_FZHDrawerView_swift_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F0DAA11DAF331000D0578C /* _1_FZHDrawerView_swift_UITests.swift */; };
+		D6F0DAB11DAF333C00D0578C /* FZHDrawerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F0DAB01DAF333C00D0578C /* FZHDrawerController.swift */; };
+		D6F0DAB31DAF338A00D0578C /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F0DAB21DAF338A00D0578C /* LeftViewController.swift */; };
+		D6F0DAB51DAF34AC00D0578C /* SubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F0DAB41DAF34AC00D0578C /* SubViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		D6CB808E1D54301F005A442F /* PBXContainerItemProxy */ = {
+		D6F0DA931DAF331000D0578C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D6CB80711D54301F005A442F /* Project object */;
+			containerPortal = D6F0DA761DAF331000D0578C /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = D6CB80781D54301F005A442F;
+			remoteGlobalIDString = D6F0DA7D1DAF331000D0578C;
 			remoteInfo = "01-FZHDrawerView(swift)";
 		};
-		D6CB80991D54301F005A442F /* PBXContainerItemProxy */ = {
+		D6F0DA9E1DAF331000D0578C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D6CB80711D54301F005A442F /* Project object */;
+			containerPortal = D6F0DA761DAF331000D0578C /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = D6CB80781D54301F005A442F;
+			remoteGlobalIDString = D6F0DA7D1DAF331000D0578C;
 			remoteInfo = "01-FZHDrawerView(swift)";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D6CB80791D54301F005A442F /* 01-FZHDrawerView(swift).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "01-FZHDrawerView(swift).app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D6CB807C1D54301F005A442F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D6CB807E1D54301F005A442F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D6CB80811D54301F005A442F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D6CB80831D54301F005A442F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D6CB80861D54301F005A442F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		D6CB80881D54301F005A442F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D6CB808D1D54301F005A442F /* 01-FZHDrawerView(swift)Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "01-FZHDrawerView(swift)Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D6CB80911D54301F005A442F /* _1_FZHDrawerView_swift_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _1_FZHDrawerView_swift_Tests.swift; sourceTree = "<group>"; };
-		D6CB80931D54301F005A442F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D6CB80981D54301F005A442F /* 01-FZHDrawerView(swift)UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "01-FZHDrawerView(swift)UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D6CB809C1D54301F005A442F /* _1_FZHDrawerView_swift_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _1_FZHDrawerView_swift_UITests.swift; sourceTree = "<group>"; };
-		D6CB809E1D54301F005A442F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D6CBED521D5708120045BD9C /* LeftView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftView.swift; sourceTree = "<group>"; };
-		D6CBED541D57081C0045BD9C /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
-		D6CBED561D57082B0045BD9C /* SubViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubViewController.swift; sourceTree = "<group>"; };
-		D6D9CB3D1D63E721009D3978 /* FZHLeftDrawerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FZHLeftDrawerViewController.swift; path = Controller/FZHLeftDrawerViewController.swift; sourceTree = "<group>"; };
+		D6F0DA7E1DAF331000D0578C /* 01-FZHDrawerView(swift).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "01-FZHDrawerView(swift).app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6F0DA811DAF331000D0578C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D6F0DA831DAF331000D0578C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D6F0DA861DAF331000D0578C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D6F0DA881DAF331000D0578C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D6F0DA8B1DAF331000D0578C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D6F0DA8D1DAF331000D0578C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6F0DA921DAF331000D0578C /* 01-FZHDrawerView(swift)Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "01-FZHDrawerView(swift)Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6F0DA961DAF331000D0578C /* _1_FZHDrawerView_swift_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _1_FZHDrawerView_swift_Tests.swift; sourceTree = "<group>"; };
+		D6F0DA981DAF331000D0578C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6F0DA9D1DAF331000D0578C /* 01-FZHDrawerView(swift)UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "01-FZHDrawerView(swift)UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6F0DAA11DAF331000D0578C /* _1_FZHDrawerView_swift_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _1_FZHDrawerView_swift_UITests.swift; sourceTree = "<group>"; };
+		D6F0DAA31DAF331000D0578C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6F0DAB01DAF333C00D0578C /* FZHDrawerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FZHDrawerController.swift; path = FZHDrawer/FZHDrawerController.swift; sourceTree = "<group>"; };
+		D6F0DAB21DAF338A00D0578C /* LeftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftViewController.swift; sourceTree = "<group>"; };
+		D6F0DAB41DAF34AC00D0578C /* SubViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D6CB80761D54301F005A442F /* Frameworks */ = {
+		D6F0DA7B1DAF331000D0578C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D6CB808A1D54301F005A442F /* Frameworks */ = {
+		D6F0DA8F1DAF331000D0578C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D6CB80951D54301F005A442F /* Frameworks */ = {
+		D6F0DA9A1DAF331000D0578C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -82,79 +80,78 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D6CB80701D54301F005A442F = {
+		D6F0DA751DAF331000D0578C = {
 			isa = PBXGroup;
 			children = (
-				D6CB807B1D54301F005A442F /* 01-FZHDrawerView(swift) */,
-				D6CB80901D54301F005A442F /* 01-FZHDrawerView(swift)Tests */,
-				D6CB809B1D54301F005A442F /* 01-FZHDrawerView(swift)UITests */,
-				D6CB807A1D54301F005A442F /* Products */,
+				D6F0DA801DAF331000D0578C /* 01-FZHDrawerView(swift) */,
+				D6F0DA951DAF331000D0578C /* 01-FZHDrawerView(swift)Tests */,
+				D6F0DAA01DAF331000D0578C /* 01-FZHDrawerView(swift)UITests */,
+				D6F0DA7F1DAF331000D0578C /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		D6CB807A1D54301F005A442F /* Products */ = {
+		D6F0DA7F1DAF331000D0578C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D6CB80791D54301F005A442F /* 01-FZHDrawerView(swift).app */,
-				D6CB808D1D54301F005A442F /* 01-FZHDrawerView(swift)Tests.xctest */,
-				D6CB80981D54301F005A442F /* 01-FZHDrawerView(swift)UITests.xctest */,
+				D6F0DA7E1DAF331000D0578C /* 01-FZHDrawerView(swift).app */,
+				D6F0DA921DAF331000D0578C /* 01-FZHDrawerView(swift)Tests.xctest */,
+				D6F0DA9D1DAF331000D0578C /* 01-FZHDrawerView(swift)UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D6CB807B1D54301F005A442F /* 01-FZHDrawerView(swift) */ = {
+		D6F0DA801DAF331000D0578C /* 01-FZHDrawerView(swift) */ = {
 			isa = PBXGroup;
 			children = (
-				D6D9CB3C1D63E6ED009D3978 /* Controller */,
-				D6CB807C1D54301F005A442F /* AppDelegate.swift */,
-				D6CB807E1D54301F005A442F /* ViewController.swift */,
-				D6CBED561D57082B0045BD9C /* SubViewController.swift */,
-				D6CBED521D5708120045BD9C /* LeftView.swift */,
-				D6CBED541D57081C0045BD9C /* MainView.swift */,
-				D6CB80801D54301F005A442F /* Main.storyboard */,
-				D6CB80831D54301F005A442F /* Assets.xcassets */,
-				D6CB80851D54301F005A442F /* LaunchScreen.storyboard */,
-				D6CB80881D54301F005A442F /* Info.plist */,
+				D6F0DAAF1DAF331A00D0578C /* FZHDrawer */,
+				D6F0DA811DAF331000D0578C /* AppDelegate.swift */,
+				D6F0DA831DAF331000D0578C /* ViewController.swift */,
+				D6F0DAB41DAF34AC00D0578C /* SubViewController.swift */,
+				D6F0DAB21DAF338A00D0578C /* LeftViewController.swift */,
+				D6F0DA851DAF331000D0578C /* Main.storyboard */,
+				D6F0DA881DAF331000D0578C /* Assets.xcassets */,
+				D6F0DA8A1DAF331000D0578C /* LaunchScreen.storyboard */,
+				D6F0DA8D1DAF331000D0578C /* Info.plist */,
 			);
 			path = "01-FZHDrawerView(swift)";
 			sourceTree = "<group>";
 		};
-		D6CB80901D54301F005A442F /* 01-FZHDrawerView(swift)Tests */ = {
+		D6F0DA951DAF331000D0578C /* 01-FZHDrawerView(swift)Tests */ = {
 			isa = PBXGroup;
 			children = (
-				D6CB80911D54301F005A442F /* _1_FZHDrawerView_swift_Tests.swift */,
-				D6CB80931D54301F005A442F /* Info.plist */,
+				D6F0DA961DAF331000D0578C /* _1_FZHDrawerView_swift_Tests.swift */,
+				D6F0DA981DAF331000D0578C /* Info.plist */,
 			);
 			path = "01-FZHDrawerView(swift)Tests";
 			sourceTree = "<group>";
 		};
-		D6CB809B1D54301F005A442F /* 01-FZHDrawerView(swift)UITests */ = {
+		D6F0DAA01DAF331000D0578C /* 01-FZHDrawerView(swift)UITests */ = {
 			isa = PBXGroup;
 			children = (
-				D6CB809C1D54301F005A442F /* _1_FZHDrawerView_swift_UITests.swift */,
-				D6CB809E1D54301F005A442F /* Info.plist */,
+				D6F0DAA11DAF331000D0578C /* _1_FZHDrawerView_swift_UITests.swift */,
+				D6F0DAA31DAF331000D0578C /* Info.plist */,
 			);
 			path = "01-FZHDrawerView(swift)UITests";
 			sourceTree = "<group>";
 		};
-		D6D9CB3C1D63E6ED009D3978 /* Controller */ = {
+		D6F0DAAF1DAF331A00D0578C /* FZHDrawer */ = {
 			isa = PBXGroup;
 			children = (
-				D6D9CB3D1D63E721009D3978 /* FZHLeftDrawerViewController.swift */,
+				D6F0DAB01DAF333C00D0578C /* FZHDrawerController.swift */,
 			);
-			name = Controller;
+			name = FZHDrawer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D6CB80781D54301F005A442F /* 01-FZHDrawerView(swift) */ = {
+		D6F0DA7D1DAF331000D0578C /* 01-FZHDrawerView(swift) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D6CB80A11D54301F005A442F /* Build configuration list for PBXNativeTarget "01-FZHDrawerView(swift)" */;
+			buildConfigurationList = D6F0DAA61DAF331000D0578C /* Build configuration list for PBXNativeTarget "01-FZHDrawerView(swift)" */;
 			buildPhases = (
-				D6CB80751D54301F005A442F /* Sources */,
-				D6CB80761D54301F005A442F /* Frameworks */,
-				D6CB80771D54301F005A442F /* Resources */,
+				D6F0DA7A1DAF331000D0578C /* Sources */,
+				D6F0DA7B1DAF331000D0578C /* Frameworks */,
+				D6F0DA7C1DAF331000D0578C /* Resources */,
 			);
 			buildRules = (
 			);
@@ -162,69 +159,75 @@
 			);
 			name = "01-FZHDrawerView(swift)";
 			productName = "01-FZHDrawerView(swift)";
-			productReference = D6CB80791D54301F005A442F /* 01-FZHDrawerView(swift).app */;
+			productReference = D6F0DA7E1DAF331000D0578C /* 01-FZHDrawerView(swift).app */;
 			productType = "com.apple.product-type.application";
 		};
-		D6CB808C1D54301F005A442F /* 01-FZHDrawerView(swift)Tests */ = {
+		D6F0DA911DAF331000D0578C /* 01-FZHDrawerView(swift)Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D6CB80A41D54301F005A442F /* Build configuration list for PBXNativeTarget "01-FZHDrawerView(swift)Tests" */;
+			buildConfigurationList = D6F0DAA91DAF331000D0578C /* Build configuration list for PBXNativeTarget "01-FZHDrawerView(swift)Tests" */;
 			buildPhases = (
-				D6CB80891D54301F005A442F /* Sources */,
-				D6CB808A1D54301F005A442F /* Frameworks */,
-				D6CB808B1D54301F005A442F /* Resources */,
+				D6F0DA8E1DAF331000D0578C /* Sources */,
+				D6F0DA8F1DAF331000D0578C /* Frameworks */,
+				D6F0DA901DAF331000D0578C /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				D6CB808F1D54301F005A442F /* PBXTargetDependency */,
+				D6F0DA941DAF331000D0578C /* PBXTargetDependency */,
 			);
 			name = "01-FZHDrawerView(swift)Tests";
 			productName = "01-FZHDrawerView(swift)Tests";
-			productReference = D6CB808D1D54301F005A442F /* 01-FZHDrawerView(swift)Tests.xctest */;
+			productReference = D6F0DA921DAF331000D0578C /* 01-FZHDrawerView(swift)Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		D6CB80971D54301F005A442F /* 01-FZHDrawerView(swift)UITests */ = {
+		D6F0DA9C1DAF331000D0578C /* 01-FZHDrawerView(swift)UITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D6CB80A71D54301F005A442F /* Build configuration list for PBXNativeTarget "01-FZHDrawerView(swift)UITests" */;
+			buildConfigurationList = D6F0DAAC1DAF331000D0578C /* Build configuration list for PBXNativeTarget "01-FZHDrawerView(swift)UITests" */;
 			buildPhases = (
-				D6CB80941D54301F005A442F /* Sources */,
-				D6CB80951D54301F005A442F /* Frameworks */,
-				D6CB80961D54301F005A442F /* Resources */,
+				D6F0DA991DAF331000D0578C /* Sources */,
+				D6F0DA9A1DAF331000D0578C /* Frameworks */,
+				D6F0DA9B1DAF331000D0578C /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				D6CB809A1D54301F005A442F /* PBXTargetDependency */,
+				D6F0DA9F1DAF331000D0578C /* PBXTargetDependency */,
 			);
 			name = "01-FZHDrawerView(swift)UITests";
 			productName = "01-FZHDrawerView(swift)UITests";
-			productReference = D6CB80981D54301F005A442F /* 01-FZHDrawerView(swift)UITests.xctest */;
+			productReference = D6F0DA9D1DAF331000D0578C /* 01-FZHDrawerView(swift)UITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D6CB80711D54301F005A442F /* Project object */ = {
+		D6F0DA761DAF331000D0578C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = FZH;
 				TargetAttributes = {
-					D6CB80781D54301F005A442F = {
-						CreatedOnToolsVersion = 7.3;
+					D6F0DA7D1DAF331000D0578C = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 3TQS7A8S7H;
+						ProvisioningStyle = Automatic;
 					};
-					D6CB808C1D54301F005A442F = {
-						CreatedOnToolsVersion = 7.3;
-						TestTargetID = D6CB80781D54301F005A442F;
+					D6F0DA911DAF331000D0578C = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 3TQS7A8S7H;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D6F0DA7D1DAF331000D0578C;
 					};
-					D6CB80971D54301F005A442F = {
-						CreatedOnToolsVersion = 7.3;
-						TestTargetID = D6CB80781D54301F005A442F;
+					D6F0DA9C1DAF331000D0578C = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 3TQS7A8S7H;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D6F0DA7D1DAF331000D0578C;
 					};
 				};
 			};
-			buildConfigurationList = D6CB80741D54301F005A442F /* Build configuration list for PBXProject "01-FZHDrawerView(swift)" */;
+			buildConfigurationList = D6F0DA791DAF331000D0578C /* Build configuration list for PBXProject "01-FZHDrawerView(swift)" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -232,37 +235,37 @@
 				en,
 				Base,
 			);
-			mainGroup = D6CB80701D54301F005A442F;
-			productRefGroup = D6CB807A1D54301F005A442F /* Products */;
+			mainGroup = D6F0DA751DAF331000D0578C;
+			productRefGroup = D6F0DA7F1DAF331000D0578C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D6CB80781D54301F005A442F /* 01-FZHDrawerView(swift) */,
-				D6CB808C1D54301F005A442F /* 01-FZHDrawerView(swift)Tests */,
-				D6CB80971D54301F005A442F /* 01-FZHDrawerView(swift)UITests */,
+				D6F0DA7D1DAF331000D0578C /* 01-FZHDrawerView(swift) */,
+				D6F0DA911DAF331000D0578C /* 01-FZHDrawerView(swift)Tests */,
+				D6F0DA9C1DAF331000D0578C /* 01-FZHDrawerView(swift)UITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		D6CB80771D54301F005A442F /* Resources */ = {
+		D6F0DA7C1DAF331000D0578C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6CB80871D54301F005A442F /* LaunchScreen.storyboard in Resources */,
-				D6CB80841D54301F005A442F /* Assets.xcassets in Resources */,
-				D6CB80821D54301F005A442F /* Main.storyboard in Resources */,
+				D6F0DA8C1DAF331000D0578C /* LaunchScreen.storyboard in Resources */,
+				D6F0DA891DAF331000D0578C /* Assets.xcassets in Resources */,
+				D6F0DA871DAF331000D0578C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D6CB808B1D54301F005A442F /* Resources */ = {
+		D6F0DA901DAF331000D0578C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D6CB80961D54301F005A442F /* Resources */ = {
+		D6F0DA9B1DAF331000D0578C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -272,63 +275,62 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		D6CB80751D54301F005A442F /* Sources */ = {
+		D6F0DA7A1DAF331000D0578C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6CB807F1D54301F005A442F /* ViewController.swift in Sources */,
-				D6CBED551D57081C0045BD9C /* MainView.swift in Sources */,
-				D6CBED571D57082B0045BD9C /* SubViewController.swift in Sources */,
-				D6CB807D1D54301F005A442F /* AppDelegate.swift in Sources */,
-				D6CBED531D5708120045BD9C /* LeftView.swift in Sources */,
-				D6D9CB3E1D63E721009D3978 /* FZHLeftDrawerViewController.swift in Sources */,
+				D6F0DA841DAF331000D0578C /* ViewController.swift in Sources */,
+				D6F0DAB31DAF338A00D0578C /* LeftViewController.swift in Sources */,
+				D6F0DAB51DAF34AC00D0578C /* SubViewController.swift in Sources */,
+				D6F0DA821DAF331000D0578C /* AppDelegate.swift in Sources */,
+				D6F0DAB11DAF333C00D0578C /* FZHDrawerController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D6CB80891D54301F005A442F /* Sources */ = {
+		D6F0DA8E1DAF331000D0578C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6CB80921D54301F005A442F /* _1_FZHDrawerView_swift_Tests.swift in Sources */,
+				D6F0DA971DAF331000D0578C /* _1_FZHDrawerView_swift_Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D6CB80941D54301F005A442F /* Sources */ = {
+		D6F0DA991DAF331000D0578C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6CB809D1D54301F005A442F /* _1_FZHDrawerView_swift_UITests.swift in Sources */,
+				D6F0DAA21DAF331000D0578C /* _1_FZHDrawerView_swift_UITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		D6CB808F1D54301F005A442F /* PBXTargetDependency */ = {
+		D6F0DA941DAF331000D0578C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D6CB80781D54301F005A442F /* 01-FZHDrawerView(swift) */;
-			targetProxy = D6CB808E1D54301F005A442F /* PBXContainerItemProxy */;
+			target = D6F0DA7D1DAF331000D0578C /* 01-FZHDrawerView(swift) */;
+			targetProxy = D6F0DA931DAF331000D0578C /* PBXContainerItemProxy */;
 		};
-		D6CB809A1D54301F005A442F /* PBXTargetDependency */ = {
+		D6F0DA9F1DAF331000D0578C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D6CB80781D54301F005A442F /* 01-FZHDrawerView(swift) */;
-			targetProxy = D6CB80991D54301F005A442F /* PBXContainerItemProxy */;
+			target = D6F0DA7D1DAF331000D0578C /* 01-FZHDrawerView(swift) */;
+			targetProxy = D6F0DA9E1DAF331000D0578C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D6CB80801D54301F005A442F /* Main.storyboard */ = {
+		D6F0DA851DAF331000D0578C /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D6CB80811D54301F005A442F /* Base */,
+				D6F0DA861DAF331000D0578C /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		D6CB80851D54301F005A442F /* LaunchScreen.storyboard */ = {
+		D6F0DA8A1DAF331000D0578C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D6CB80861D54301F005A442F /* Base */,
+				D6F0DA8B1DAF331000D0578C /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -336,7 +338,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		D6CB809F1D54301F005A442F /* Debug */ = {
+		D6F0DAA41DAF331000D0578C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -348,10 +350,13 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -373,15 +378,16 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		D6CB80A01D54301F005A442F /* Release */ = {
+		D6F0DAA51DAF331000D0578C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -393,10 +399,13 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -412,77 +421,94 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		D6CB80A21D54301F005A442F /* Debug */ = {
+		D6F0DAA71DAF331000D0578C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3TQS7A8S7H;
 				INFOPLIST_FILE = "01-FZHDrawerView(swift)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fengzhihao.-1-FZHDrawerView-swift-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
-		D6CB80A31D54301F005A442F /* Release */ = {
+		D6F0DAA81DAF331000D0578C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3TQS7A8S7H;
 				INFOPLIST_FILE = "01-FZHDrawerView(swift)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fengzhihao.-1-FZHDrawerView-swift-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
-		D6CB80A51D54301F005A442F /* Debug */ = {
+		D6F0DAAA1DAF331000D0578C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 3TQS7A8S7H;
 				INFOPLIST_FILE = "01-FZHDrawerView(swift)Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fengzhihao.-1-FZHDrawerView-swift-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/01-FZHDrawerView(swift).app/01-FZHDrawerView(swift)";
 			};
 			name = Debug;
 		};
-		D6CB80A61D54301F005A442F /* Release */ = {
+		D6F0DAAB1DAF331000D0578C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 3TQS7A8S7H;
 				INFOPLIST_FILE = "01-FZHDrawerView(swift)Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fengzhihao.-1-FZHDrawerView-swift-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/01-FZHDrawerView(swift).app/01-FZHDrawerView(swift)";
 			};
 			name = Release;
 		};
-		D6CB80A81D54301F005A442F /* Debug */ = {
+		D6F0DAAD1DAF331000D0578C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 3TQS7A8S7H;
 				INFOPLIST_FILE = "01-FZHDrawerView(swift)UITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fengzhihao.-1-FZHDrawerView-swift-UITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = "01-FZHDrawerView(swift)";
 			};
 			name = Debug;
 		};
-		D6CB80A91D54301F005A442F /* Release */ = {
+		D6F0DAAE1DAF331000D0578C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 3TQS7A8S7H;
 				INFOPLIST_FILE = "01-FZHDrawerView(swift)UITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fengzhihao.-1-FZHDrawerView-swift-UITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = "01-FZHDrawerView(swift)";
 			};
 			name = Release;
@@ -490,43 +516,40 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D6CB80741D54301F005A442F /* Build configuration list for PBXProject "01-FZHDrawerView(swift)" */ = {
+		D6F0DA791DAF331000D0578C /* Build configuration list for PBXProject "01-FZHDrawerView(swift)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D6CB809F1D54301F005A442F /* Debug */,
-				D6CB80A01D54301F005A442F /* Release */,
+				D6F0DAA41DAF331000D0578C /* Debug */,
+				D6F0DAA51DAF331000D0578C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D6CB80A11D54301F005A442F /* Build configuration list for PBXNativeTarget "01-FZHDrawerView(swift)" */ = {
+		D6F0DAA61DAF331000D0578C /* Build configuration list for PBXNativeTarget "01-FZHDrawerView(swift)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D6CB80A21D54301F005A442F /* Debug */,
-				D6CB80A31D54301F005A442F /* Release */,
+				D6F0DAA71DAF331000D0578C /* Debug */,
+				D6F0DAA81DAF331000D0578C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
-		D6CB80A41D54301F005A442F /* Build configuration list for PBXNativeTarget "01-FZHDrawerView(swift)Tests" */ = {
+		D6F0DAA91DAF331000D0578C /* Build configuration list for PBXNativeTarget "01-FZHDrawerView(swift)Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D6CB80A51D54301F005A442F /* Debug */,
-				D6CB80A61D54301F005A442F /* Release */,
+				D6F0DAAA1DAF331000D0578C /* Debug */,
+				D6F0DAAB1DAF331000D0578C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
-		D6CB80A71D54301F005A442F /* Build configuration list for PBXNativeTarget "01-FZHDrawerView(swift)UITests" */ = {
+		D6F0DAAC1DAF331000D0578C /* Build configuration list for PBXNativeTarget "01-FZHDrawerView(swift)UITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D6CB80A81D54301F005A442F /* Debug */,
-				D6CB80A91D54301F005A442F /* Release */,
+				D6F0DAAD1DAF331000D0578C /* Debug */,
+				D6F0DAAE1DAF331000D0578C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D6CB80711D54301F005A442F /* Project object */;
+	rootObject = D6F0DA761DAF331000D0578C /* Project object */;
 }
