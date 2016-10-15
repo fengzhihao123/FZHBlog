@@ -23,4 +23,5 @@
 ![gif](https://github.com/fengzhihao123/CommonKnowledgeSummary/blob/master/03-FZHTabbarController/03-FZHTabbarCOntroller.gif)
 
 <h2><a name="C4">04 - 自动轮播图</a>
+
 ![gif](https://github.com/fengzhihao123/FZHKit/blob/master/04-AutoScrollDemo/04-UIScrollView.gif)
