@@ -193,13 +193,16 @@
 				TargetAttributes = {
 					D690197A1D58051F00E4F95F = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0800;
 					};
 					D690198E1D58052000E4F95F = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0800;
 						TestTargetID = D690197A1D58051F00E4F95F;
 					};
 					D69019991D58052000E4F95F = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0800;
 						TestTargetID = D690197A1D58051F00E4F95F;
 					};
 				};
@@ -403,6 +406,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fengzhihao.-2-FZHDeleteCells-Swift-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -414,6 +418,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fengzhihao.-2-FZHDeleteCells-Swift-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -425,6 +430,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fengzhihao.-2-FZHDeleteCells-Swift-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/02-FZHDeleteCells(Swift).app/02-FZHDeleteCells(Swift)";
 			};
 			name = Debug;
@@ -437,6 +443,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fengzhihao.-2-FZHDeleteCells-Swift-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/02-FZHDeleteCells(Swift).app/02-FZHDeleteCells(Swift)";
 			};
 			name = Release;
@@ -448,6 +455,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fengzhihao.-2-FZHDeleteCells-Swift-UITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = "02-FZHDeleteCells(Swift)";
 			};
 			name = Debug;
@@ -459,6 +467,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fengzhihao.-2-FZHDeleteCells-Swift-UITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = "02-FZHDeleteCells(Swift)";
 			};
 			name = Release;
@@ -482,6 +491,7 @@
 				D69019A51D58052000E4F95F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D69019A61D58052000E4F95F /* Build configuration list for PBXNativeTarget "02-FZHDeleteCells(Swift)Tests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +500,7 @@
 				D69019A81D58052000E4F95F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D69019A91D58052000E4F95F /* Build configuration list for PBXNativeTarget "02-FZHDeleteCells(Swift)UITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +509,7 @@
 				D69019AB1D58052000E4F95F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

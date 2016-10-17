@@ -9,8 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
-    let SCREEN_WIDTH = UIScreen.mainScreen().bounds.size.width
-    let SCREEN_HEIGHT = UIScreen.mainScreen().bounds.size.height
+    let SCREEN_WIDTH = UIScreen.main.bounds.size.width
+    let SCREEN_HEIGHT = UIScreen.main.bounds.size.height
     let tableView = UITableView()
     var dataSource: NSMutableArray = ["1","2","3","4","5","6","7","8"]
     var deleteArr: NSMutableArray = []
@@ -22,10 +22,10 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     }
     
     func setupNavigationBar() -> Void {
-        let editButton = UIBarButtonItem.init(title: "编辑", style: .Done, target: self, action: #selector(buttonDidTouch))
-        let doneButton = UIBarButtonItem.init(title: "完成", style: .Done, target: self, action: #selector(buttonDidTouch))
-        let deleteButton = UIBarButtonItem.init(title: "删除", style: .Done, target: self, action: #selector(buttonDidTouch))
-        let selectAllButton = UIBarButtonItem.init(title: "全选", style: .Done, target: self, action: #selector(buttonDidTouch))
+        let editButton = UIBarButtonItem.init(title: "编辑", style: .done, target: self, action: #selector(buttonDidTouch))
+        let doneButton = UIBarButtonItem.init(title: "完成", style: .done, target: self, action: #selector(buttonDidTouch))
+        let deleteButton = UIBarButtonItem.init(title: "删除", style: .done, target: self, action: #selector(buttonDidTouch))
+        let selectAllButton = UIBarButtonItem.init(title: "全选", style: .done, target: self, action: #selector(buttonDidTouch))
         
         editButton.tag = 1001
         doneButton.tag = 1002
@@ -34,24 +34,24 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         self.navigationItem.leftBarButtonItems = [editButton,doneButton,deleteButton,selectAllButton]
     }
     
-    func buttonDidTouch(btn:UIButton) -> Void {
+    func buttonDidTouch(_ btn:UIButton) -> Void {
         if btn.tag == 1001 {//编辑
-            tableView.editing = true
+            tableView.isEditing = true
             tableView.allowsMultipleSelectionDuringEditing = true
         }else if btn.tag == 1002{//完成
-            tableView.editing = false
+            tableView.isEditing = false
         }else if btn.tag == 1003{//删除
-            self.dataSource.removeObjectsInArray(self.deleteArr as [AnyObject])
+            self.dataSource.removeObjects(in: self.deleteArr as [AnyObject])
             tableView.reloadData()
         }else{//全选
-            if tableView.editing == false {//如果处于完成状态则直接返回
+            if tableView.isEditing == false {//如果处于完成状态则直接返回
                 return
             }
             for row in 0...self.dataSource.count {
-                let indexPath = NSIndexPath.init(forRow: row, inSection: 0)
-                tableView.selectRowAtIndexPath(indexPath, animated: false, scrollPosition: .None)
+                let indexPath = IndexPath.init(row: row, section: 0)
+                tableView.selectRow(at: indexPath, animated: false, scrollPosition: .none)
             }
-            self.deleteArr.addObjectsFromArray(self.dataSource as [AnyObject])
+            self.deleteArr.addObjects(from: self.dataSource as [AnyObject])
         }
     }
     
@@ -62,31 +62,31 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         self.view.addSubview(tableView)
     }
 //    MARK: UITableViewDataSource
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.dataSource.count
     }
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = UITableViewCell.init(style: .Default, reuseIdentifier: "UITableViewCell")
-        cell.textLabel?.text = self.dataSource[indexPath.row] as? String
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell.init(style: .default, reuseIdentifier: "UITableViewCell")
+        cell.textLabel?.text = self.dataSource[(indexPath as NSIndexPath).row] as? String
         return cell
         
     }
     
 //MARK: UITableViewDelegate
 //    设置编辑style
-    func tableView(tableView: UITableView, editingStyleForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCellEditingStyle {
-        return UITableViewCellEditingStyle.init(rawValue: UITableViewCellEditingStyle.Delete.rawValue | UITableViewCellEditingStyle.Insert.rawValue)!
+    func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCellEditingStyle {
+        return UITableViewCellEditingStyle.init(rawValue: UITableViewCellEditingStyle.delete.rawValue | UITableViewCellEditingStyle.insert.rawValue)!
     }
 //    选中则添加到删除数组中
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        self.deleteArr.addObject(self.dataSource[indexPath.row])
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.deleteArr.add(self.dataSource[(indexPath as NSIndexPath).row])
     }
 //    取消选中在数组中删除
-    func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
-        self.deleteArr.removeObject(self.dataSource[indexPath.row])
+    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        self.deleteArr.remove(self.dataSource[(indexPath as NSIndexPath).row])
     }
 }
 
