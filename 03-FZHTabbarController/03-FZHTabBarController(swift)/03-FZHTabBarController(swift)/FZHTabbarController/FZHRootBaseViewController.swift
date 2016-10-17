@@ -12,13 +12,13 @@ class FZHRootBaseViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor.whiteColor()
+        view.backgroundColor = UIColor.white
     }
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
-        UIView.animateWithDuration(0.35) {
-            self.tabBarController?.tabBar.transform = CGAffineTransformIdentity
-        }
+        UIView.animate(withDuration: 0.35, animations: {
+            self.tabBarController?.tabBar.transform = CGAffineTransform.identity
+        }) 
     }
 
 }

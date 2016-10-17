@@ -9,18 +9,18 @@
 import UIKit
 enum TabbarHideStyle {
 //    有动画
-    case TabbarHideWithAnimation
+    case tabbarHideWithAnimation
 //    无动画
-    case TabbarHideWithNoAnimation
+    case tabbarHideWithNoAnimation
 }
 class FZHNavigationController: UINavigationController {
-    var tabbarHideStyle = TabbarHideStyle.TabbarHideWithNoAnimation
+    var tabbarHideStyle = TabbarHideStyle.tabbarHideWithNoAnimation
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
     }
-    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     }
     
@@ -33,13 +33,13 @@ class FZHNavigationController: UINavigationController {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func pushViewController(viewController: UIViewController, animated: Bool) {
+    override func pushViewController(_ viewController: UIViewController, animated: Bool) {
         if self.viewControllers.count > 0 {
             let rootVC = self.viewControllers[0]
 //            是否添加动画
-            if tabbarHideStyle == TabbarHideStyle.TabbarHideWithAnimation {
-                UIView.animateWithDuration(0.35, animations: {
-                    rootVC.tabBarController?.tabBar.transform = CGAffineTransformMakeTranslation(0, 64)
+            if tabbarHideStyle == TabbarHideStyle.tabbarHideWithAnimation {
+                UIView.animate(withDuration: 0.35, animations: {
+                    rootVC.tabBarController?.tabBar.transform = CGAffineTransform(translationX: 0, y: 64)
                 })
             }else{
                 viewController.hidesBottomBarWhenPushed = true

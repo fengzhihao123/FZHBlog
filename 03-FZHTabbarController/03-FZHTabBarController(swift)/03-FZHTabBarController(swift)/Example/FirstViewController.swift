@@ -14,7 +14,7 @@ class FirstViewController: FZHRootBaseViewController {
         super.viewDidLoad()
 
     }
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         let subVC = SubViewController()
         self.navigationController?.pushViewController(subVC, animated: true)
     }

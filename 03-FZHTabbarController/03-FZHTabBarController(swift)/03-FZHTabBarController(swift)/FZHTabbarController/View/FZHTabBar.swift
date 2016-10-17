@@ -8,7 +8,7 @@
 
 import UIKit
 protocol FZHTabBarDelegate {
-    func tabbar(tabbar: FZHTabBar,formWhichItem: Int, toWhichItem: Int)
+    func tabbar(_ tabbar: FZHTabBar,formWhichItem: Int, toWhichItem: Int)
 }
 class FZHTabBar: UIView {
     var tabBarButtons: NSMutableArray = []
@@ -23,11 +23,11 @@ class FZHTabBar: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func addTabbarButtonWith(item: UITabBarItem) -> Void {
+    func addTabbarButtonWith(_ item: UITabBarItem) -> Void {
         let button = FZHTabbarButton()
         button.item = item
-        self.tabBarButtons.addObject(button)
-        button.addTarget(self, action: #selector(buttonDidTouch), forControlEvents: .TouchDown)
+        self.tabBarButtons.add(button)
+        button.addTarget(self, action: #selector(buttonDidTouch), for: .touchDown)
        self.addSubview(button)
         //        默认选中
         if self.tabBarButtons.count == 1 {
@@ -35,11 +35,11 @@ class FZHTabBar: UIView {
         }
     }
     
-    func buttonDidTouch(button: FZHTabbarButton) -> Void {
+    func buttonDidTouch(_ button: FZHTabbarButton) -> Void {
         fzhTabbarDelegate.tabbar(self, formWhichItem: self.selectedButton.tag, toWhichItem: button.tag)
 //        控制器选中按钮
-        self.selectedButton.selected = false
-        button.selected = true
+        self.selectedButton.isSelected = false
+        button.isSelected = true
         self.selectedButton = button
     }
 

@@ -17,10 +17,10 @@ class FZHTabbarViewController: UITabBarController,FZHTabBarDelegate {
         setupTabbar()
     }
 //    delete origin tabbar
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         for child in self.tabBar.subviews {
-            if child.isKindOfClass(UIControl) {
+            if child.isKind(of: UIControl.self) {
                 child.removeFromSuperview()
             }
         }
@@ -34,16 +34,16 @@ class FZHTabbarViewController: UITabBarController,FZHTabBarDelegate {
     }
     
     //    MARK:FZHTabBarDelegate
-    func tabbar(tabbar: FZHTabBar, formWhichItem: Int, toWhichItem: Int) {
+    func tabbar(_ tabbar: FZHTabBar, formWhichItem: Int, toWhichItem: Int) {
         self.selectedIndex = toWhichItem
     }
     
-    func setupChildVC(childVC: UIViewController,title: String,imageName: String,selectImageName: String, isAnimation: TabbarHideStyle){
+    func setupChildVC(_ childVC: UIViewController,title: String,imageName: String,selectImageName: String, isAnimation: TabbarHideStyle){
         
         childVC.title = title
         childVC.tabBarItem.image = UIImage.init(named: imageName)
 //        不在渲染图片
-        childVC.tabBarItem.selectedImage = UIImage.init(named: selectImageName)?.imageWithRenderingMode(.AlwaysOriginal)
+        childVC.tabBarItem.selectedImage = UIImage.init(named: selectImageName)?.withRenderingMode(.alwaysOriginal)
         
         let navigationCtrl = FZHNavigationController.init(rootViewController: childVC)
         navigationCtrl.tabbarHideStyle = isAnimation
