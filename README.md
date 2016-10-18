@@ -25,7 +25,7 @@
 
 <h2><a name="C4">04 - 自动轮播图</a>
 
-![gif](https://github.com/fengzhihao123/FZHKit/blob/master/04-AutoScrollDemo/04-UIScrollView.gif)
+![gif](https://github.com/fengzhihao123/FZHKit/blob/master/04-FZHAutoScroll/04-UIScrollView.gif)
 
 <h2><a name="C5">05 - pop视图</a>
 
