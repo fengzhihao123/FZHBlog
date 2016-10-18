@@ -21,6 +21,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s3a-RA-xRN">
                                 <frame key="frameInset" minX="112" minY="41" width="144" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="popViewBtn">
                                     <color key="titleColor" red="0.54737580129999996" green="0.54737580129999996" blue="0.54737580129999996" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>

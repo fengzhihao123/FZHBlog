@@ -17,7 +17,6 @@ class FZHPopView: UIView,UITableViewDelegate,UITableViewDataSource {
     let dataArr = ["1","2","3","4","5"]
     var popViewDelegate: FZHPopViewDelegate? = nil
     
-    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupTableView()

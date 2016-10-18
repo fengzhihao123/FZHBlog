@@ -17,6 +17,10 @@ class ViewController: UIViewController,FZHPopViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupPopView()
+    }
+    
+    func setupPopView() -> Void {
         popView = FZHPopView.init(frame: CGRect(x: 0, y: SCREEN_HEIGHT, width: SCREEN_WIDTH, height: 300))
         popView.popViewDelegate = self
         view.addSubview(popView)
@@ -25,6 +29,7 @@ class ViewController: UIViewController,FZHPopViewDelegate {
     @IBAction func popViewBtnDidTouch(_ sender: AnyObject) {
         popView.showPopView()
     }
+    
     //MARK: FZHPopViewDelegate
     func transfer(title: String) -> Void{
         popViewBtn.setTitle(title, for: .normal)
