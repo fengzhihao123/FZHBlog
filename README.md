@@ -29,4 +29,4 @@
 
 <h2><a name="C5">05 - pop视图</a>
 
-![gif]()
+![gif](https://github.com/fengzhihao123/FZHKit/blob/master/05-FZHPopView/05-FZHPopView.gif)
