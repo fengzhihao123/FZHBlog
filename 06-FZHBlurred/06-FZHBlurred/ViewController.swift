@@ -13,6 +13,10 @@ class ViewController: UIViewController {
     let SCREEN_HEIGHT = UIScreen.main.bounds.size.height
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupImageView()
+    }
+    
+    func setupImageView() -> Void {
         let imageView = UIImageView.init()
         imageView.frame = CGRect(x: 0, y: 0, width: SCREEN_WIDTH, height: SCREEN_HEIGHT)
         
