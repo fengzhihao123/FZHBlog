@@ -11,6 +11,8 @@
 
 <a href="#C5">05 - pop视图</a>
 
+<a href="#C6">06 - 模糊视图</a>
+
 <h2><a name="C1">01 -抽屉视图</a></h2>
 
 ![gif](https://github.com/fengzhihao123/CommonKnowledgeSummary/blob/master/01-FZHDrawerView/01-DrawerView.gif)
@@ -30,3 +32,6 @@
 <h2><a name="C5">05 - pop视图</a>
 
 ![gif](https://github.com/fengzhihao123/FZHKit/blob/master/05-FZHPopView/05-FZHPopView.gif)
+
+<h2><a name="C6">06 - 模糊视图</a>
+![gif]()
