@@ -34,4 +34,5 @@
 ![gif](https://github.com/fengzhihao123/FZHKit/blob/master/05-FZHPopView/05-FZHPopView.gif)
 
 <h2><a name="C6">06 - 模糊视图</a>
-![gif](https://github.com/fengzhihao123/FZHKit/blob/master/06-FZHBlurred/屏幕快照%202016-11-02%20下午5.31.49.png)
+
+<img src="https://github.com/fengzhihao123/FZHKit/blob/master/06-FZHBlurred/屏幕快照%202016-11-02%20下午5.31.49.png" width="100" height="400">
