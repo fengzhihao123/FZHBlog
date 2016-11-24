@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		725011D25BD1ADF99D70793C /* libPods-07-EnlargeImageUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D3C803A766537644C2DC7060 /* libPods-07-EnlargeImageUITests.a */; };
+		92B8FAE9D4D490E7F4CEEB29 /* libPods-07-EnlargeImageTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD7074C42531B321867CEB48 /* libPods-07-EnlargeImageTests.a */; };
+		D60402171DE68A41005C3CD2 /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = D60402161DE68A41005C3CD2 /* Test.m */; };
 		D6287EA21DE58002002294BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6287EA11DE58002002294BE /* AppDelegate.swift */; };
 		D6287EA41DE58002002294BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6287EA31DE58002002294BE /* ViewController.swift */; };
 		D6287EA71DE58002002294BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6287EA51DE58002002294BE /* Main.storyboard */; };
@@ -16,6 +19,8 @@
 		D6287EC21DE58002002294BE /* _7_EnlargeImageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6287EC11DE58002002294BE /* _7_EnlargeImageUITests.swift */; };
 		D6287ED01DE580F7002294BE /* dota2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D6287ECF1DE580F7002294BE /* dota2.jpg */; };
 		D6287ED21DE59219002294BE /* FZHEnlargeImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6287ED11DE59219002294BE /* FZHEnlargeImageView.swift */; };
+		D6C9CD861DE5D36A006B39A8 /* FZHPopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C9CD851DE5D36A006B39A8 /* FZHPopView.swift */; };
+		F57C253F3C9AB57428EF2C12 /* libPods-07-EnlargeImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1435E2E729360315B14BA362 /* libPods-07-EnlargeImage.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +41,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03E8C240B365ED0B8FDA4508 /* Pods-07-EnlargeImageTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-07-EnlargeImageTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-07-EnlargeImageTests/Pods-07-EnlargeImageTests.release.xcconfig"; sourceTree = "<group>"; };
+		1435E2E729360315B14BA362 /* libPods-07-EnlargeImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-07-EnlargeImage.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		74AD0018BAFBD92CF3F98FF3 /* Pods-07-EnlargeImage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-07-EnlargeImage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-07-EnlargeImage/Pods-07-EnlargeImage.debug.xcconfig"; sourceTree = "<group>"; };
+		A0B954B7037FD1E9942A112E /* Pods-07-EnlargeImage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-07-EnlargeImage.release.xcconfig"; path = "Pods/Target Support Files/Pods-07-EnlargeImage/Pods-07-EnlargeImage.release.xcconfig"; sourceTree = "<group>"; };
+		D0B025CB4D533C4D678846B9 /* Pods-07-EnlargeImageUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-07-EnlargeImageUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-07-EnlargeImageUITests/Pods-07-EnlargeImageUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D3C803A766537644C2DC7060 /* libPods-07-EnlargeImageUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-07-EnlargeImageUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D60402141DE68A41005C3CD2 /* 07-EnlargeImage-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "07-EnlargeImage-Bridging-Header.h"; sourceTree = "<group>"; };
+		D60402151DE68A41005C3CD2 /* Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
+		D60402161DE68A41005C3CD2 /* Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test.m; sourceTree = "<group>"; };
 		D6287E9E1DE58002002294BE /* 07-EnlargeImage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "07-EnlargeImage.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6287EA11DE58002002294BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D6287EA31DE58002002294BE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +65,10 @@
 		D6287EC31DE58002002294BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D6287ECF1DE580F7002294BE /* dota2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dota2.jpg; sourceTree = "<group>"; };
 		D6287ED11DE59219002294BE /* FZHEnlargeImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FZHEnlargeImageView.swift; sourceTree = "<group>"; };
+		D6C9CD851DE5D36A006B39A8 /* FZHPopView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FZHPopView.swift; sourceTree = "<group>"; };
+		DB6148EE126360528BB5EF7B /* Pods-07-EnlargeImageTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-07-EnlargeImageTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-07-EnlargeImageTests/Pods-07-EnlargeImageTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EC57C4666CA1DB6980181A5D /* Pods-07-EnlargeImageUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-07-EnlargeImageUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-07-EnlargeImageUITests/Pods-07-EnlargeImageUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FD7074C42531B321867CEB48 /* libPods-07-EnlargeImageTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-07-EnlargeImageTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F57C253F3C9AB57428EF2C12 /* libPods-07-EnlargeImage.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92B8FAE9D4D490E7F4CEEB29 /* libPods-07-EnlargeImageTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +92,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				725011D25BD1ADF99D70793C /* libPods-07-EnlargeImageUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8AC1C9C7E674E0498BF286E6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				74AD0018BAFBD92CF3F98FF3 /* Pods-07-EnlargeImage.debug.xcconfig */,
+				A0B954B7037FD1E9942A112E /* Pods-07-EnlargeImage.release.xcconfig */,
+				DB6148EE126360528BB5EF7B /* Pods-07-EnlargeImageTests.debug.xcconfig */,
+				03E8C240B365ED0B8FDA4508 /* Pods-07-EnlargeImageTests.release.xcconfig */,
+				D0B025CB4D533C4D678846B9 /* Pods-07-EnlargeImageUITests.debug.xcconfig */,
+				EC57C4666CA1DB6980181A5D /* Pods-07-EnlargeImageUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D6287E951DE58002002294BE = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +119,8 @@
 				D6287EB51DE58002002294BE /* 07-EnlargeImageTests */,
 				D6287EC01DE58002002294BE /* 07-EnlargeImageUITests */,
 				D6287E9F1DE58002002294BE /* Products */,
+				8AC1C9C7E674E0498BF286E6 /* Pods */,
+				FBB05948925248D059419F1D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,11 +140,15 @@
 				D6287EA11DE58002002294BE /* AppDelegate.swift */,
 				D6287EA31DE58002002294BE /* ViewController.swift */,
 				D6287ED11DE59219002294BE /* FZHEnlargeImageView.swift */,
+				D6C9CD851DE5D36A006B39A8 /* FZHPopView.swift */,
+				D60402151DE68A41005C3CD2 /* Test.h */,
+				D60402161DE68A41005C3CD2 /* Test.m */,
 				D6287ECF1DE580F7002294BE /* dota2.jpg */,
 				D6287EA51DE58002002294BE /* Main.storyboard */,
 				D6287EA81DE58002002294BE /* Assets.xcassets */,
 				D6287EAA1DE58002002294BE /* LaunchScreen.storyboard */,
 				D6287EAD1DE58002002294BE /* Info.plist */,
+				D60402141DE68A41005C3CD2 /* 07-EnlargeImage-Bridging-Header.h */,
 			);
 			path = "07-EnlargeImage";
 			sourceTree = "<group>";
@@ -131,6 +171,16 @@
 			path = "07-EnlargeImageUITests";
 			sourceTree = "<group>";
 		};
+		FBB05948925248D059419F1D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1435E2E729360315B14BA362 /* libPods-07-EnlargeImage.a */,
+				FD7074C42531B321867CEB48 /* libPods-07-EnlargeImageTests.a */,
+				D3C803A766537644C2DC7060 /* libPods-07-EnlargeImageUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,9 +188,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D6287EC61DE58002002294BE /* Build configuration list for PBXNativeTarget "07-EnlargeImage" */;
 			buildPhases = (
+				3DCF423DBAF0AA201969AD43 /* [CP] Check Pods Manifest.lock */,
 				D6287E9A1DE58002002294BE /* Sources */,
 				D6287E9B1DE58002002294BE /* Frameworks */,
 				D6287E9C1DE58002002294BE /* Resources */,
+				35AB0483AA522CB6C18648FE /* [CP] Embed Pods Frameworks */,
+				40BF2CA6BCA751D7388015C4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -155,9 +208,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D6287EC91DE58002002294BE /* Build configuration list for PBXNativeTarget "07-EnlargeImageTests" */;
 			buildPhases = (
+				F89CAD18507B1D51044CD39B /* [CP] Check Pods Manifest.lock */,
 				D6287EAE1DE58002002294BE /* Sources */,
 				D6287EAF1DE58002002294BE /* Frameworks */,
 				D6287EB01DE58002002294BE /* Resources */,
+				291158ED541171C4567F96B3 /* [CP] Embed Pods Frameworks */,
+				F0B8C6120993090613444650 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -173,9 +229,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D6287ECC1DE58002002294BE /* Build configuration list for PBXNativeTarget "07-EnlargeImageUITests" */;
 			buildPhases = (
+				CB648762BDDC4F35FBD3BA40 /* [CP] Check Pods Manifest.lock */,
 				D6287EB91DE58002002294BE /* Sources */,
 				D6287EBA1DE58002002294BE /* Frameworks */,
 				D6287EBB1DE58002002294BE /* Resources */,
+				2B0AEE803D7C301589FBC642 /* [CP] Embed Pods Frameworks */,
+				55E685B4756F23F3A05FC6ED /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -200,6 +259,7 @@
 					D6287E9D1DE58002002294BE = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 3TQS7A8S7H;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 					D6287EB11DE58002002294BE = {
@@ -264,12 +324,152 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		291158ED541171C4567F96B3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-07-EnlargeImageTests/Pods-07-EnlargeImageTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2B0AEE803D7C301589FBC642 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-07-EnlargeImageUITests/Pods-07-EnlargeImageUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		35AB0483AA522CB6C18648FE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-07-EnlargeImage/Pods-07-EnlargeImage-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3DCF423DBAF0AA201969AD43 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		40BF2CA6BCA751D7388015C4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-07-EnlargeImage/Pods-07-EnlargeImage-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		55E685B4756F23F3A05FC6ED /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-07-EnlargeImageUITests/Pods-07-EnlargeImageUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB648762BDDC4F35FBD3BA40 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F0B8C6120993090613444650 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-07-EnlargeImageTests/Pods-07-EnlargeImageTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F89CAD18507B1D51044CD39B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D6287E9A1DE58002002294BE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D60402171DE68A41005C3CD2 /* Test.m in Sources */,
 				D6287EA41DE58002002294BE /* ViewController.swift in Sources */,
+				D6C9CD861DE5D36A006B39A8 /* FZHPopView.swift in Sources */,
 				D6287ED21DE59219002294BE /* FZHEnlargeImageView.swift in Sources */,
 				D6287EA21DE58002002294BE /* AppDelegate.swift in Sources */,
 			);
@@ -419,32 +619,40 @@
 		};
 		D6287EC71DE58002002294BE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74AD0018BAFBD92CF3F98FF3 /* Pods-07-EnlargeImage.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 3TQS7A8S7H;
 				INFOPLIST_FILE = "07-EnlargeImage/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fengzhihao.-7-EnlargeImage";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "07-EnlargeImage/07-EnlargeImage-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		D6287EC81DE58002002294BE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0B954B7037FD1E9942A112E /* Pods-07-EnlargeImage.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 3TQS7A8S7H;
 				INFOPLIST_FILE = "07-EnlargeImage/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fengzhihao.-7-EnlargeImage";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "07-EnlargeImage/07-EnlargeImage-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		D6287ECA1DE58002002294BE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB6148EE126360528BB5EF7B /* Pods-07-EnlargeImageTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -460,6 +668,7 @@
 		};
 		D6287ECB1DE58002002294BE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03E8C240B365ED0B8FDA4508 /* Pods-07-EnlargeImageTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -475,6 +684,7 @@
 		};
 		D6287ECD1DE58002002294BE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0B025CB4D533C4D678846B9 /* Pods-07-EnlargeImageUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 3TQS7A8S7H;
@@ -489,6 +699,7 @@
 		};
 		D6287ECE1DE58002002294BE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC57C4666CA1DB6980181A5D /* Pods-07-EnlargeImageUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 3TQS7A8S7H;
@@ -520,6 +731,7 @@
 				D6287EC81DE58002002294BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D6287EC91DE58002002294BE /* Build configuration list for PBXNativeTarget "07-EnlargeImageTests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +740,7 @@
 				D6287ECB1DE58002002294BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D6287ECC1DE58002002294BE /* Build configuration list for PBXNativeTarget "07-EnlargeImageUITests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +749,7 @@
 				D6287ECE1DE58002002294BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

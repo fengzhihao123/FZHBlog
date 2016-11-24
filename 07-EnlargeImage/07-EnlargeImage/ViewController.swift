@@ -20,6 +20,7 @@ class ViewController: UIViewController {
         exampleImageView.largeFrame = CGRect(x: 0, y: 0, width: 300, height: 400)
         exampleImageView.image = UIImage.init(named: "dota2.jpg")
         view.addSubview(exampleImageView)
+        exampleImageView.currentVC = self
     }
 
 }
