@@ -1,0 +1,535 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D604025F1DE6CF3E005C3CD2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D604025E1DE6CF3E005C3CD2 /* AppDelegate.swift */; };
+		D60402611DE6CF3E005C3CD2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60402601DE6CF3E005C3CD2 /* ViewController.swift */; };
+		D60402641DE6CF3E005C3CD2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D60402621DE6CF3E005C3CD2 /* Main.storyboard */; };
+		D60402661DE6CF3E005C3CD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D60402651DE6CF3E005C3CD2 /* Assets.xcassets */; };
+		D60402691DE6CF3E005C3CD2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D60402671DE6CF3E005C3CD2 /* LaunchScreen.storyboard */; };
+		D60402741DE6CF3E005C3CD2 /* _8_FZHTransferAnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60402731DE6CF3E005C3CD2 /* _8_FZHTransferAnimationTests.swift */; };
+		D604027F1DE6CF3E005C3CD2 /* _8_FZHTransferAnimationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D604027E1DE6CF3E005C3CD2 /* _8_FZHTransferAnimationUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D60402701DE6CF3E005C3CD2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D60402531DE6CF3E005C3CD2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D604025A1DE6CF3E005C3CD2;
+			remoteInfo = "08-FZHTransferAnimation";
+		};
+		D604027B1DE6CF3E005C3CD2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D60402531DE6CF3E005C3CD2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D604025A1DE6CF3E005C3CD2;
+			remoteInfo = "08-FZHTransferAnimation";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D604025B1DE6CF3E005C3CD2 /* 08-FZHTransferAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "08-FZHTransferAnimation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D604025E1DE6CF3E005C3CD2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D60402601DE6CF3E005C3CD2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D60402631DE6CF3E005C3CD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D60402651DE6CF3E005C3CD2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D60402681DE6CF3E005C3CD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D604026A1DE6CF3E005C3CD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D604026F1DE6CF3E005C3CD2 /* 08-FZHTransferAnimationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "08-FZHTransferAnimationTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D60402731DE6CF3E005C3CD2 /* _8_FZHTransferAnimationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _8_FZHTransferAnimationTests.swift; sourceTree = "<group>"; };
+		D60402751DE6CF3E005C3CD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D604027A1DE6CF3E005C3CD2 /* 08-FZHTransferAnimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "08-FZHTransferAnimationUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D604027E1DE6CF3E005C3CD2 /* _8_FZHTransferAnimationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _8_FZHTransferAnimationUITests.swift; sourceTree = "<group>"; };
+		D60402801DE6CF3E005C3CD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D60402581DE6CF3E005C3CD2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D604026C1DE6CF3E005C3CD2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D60402771DE6CF3E005C3CD2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D60402521DE6CF3E005C3CD2 = {
+			isa = PBXGroup;
+			children = (
+				D604025D1DE6CF3E005C3CD2 /* 08-FZHTransferAnimation */,
+				D60402721DE6CF3E005C3CD2 /* 08-FZHTransferAnimationTests */,
+				D604027D1DE6CF3E005C3CD2 /* 08-FZHTransferAnimationUITests */,
+				D604025C1DE6CF3E005C3CD2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D604025C1DE6CF3E005C3CD2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D604025B1DE6CF3E005C3CD2 /* 08-FZHTransferAnimation.app */,
+				D604026F1DE6CF3E005C3CD2 /* 08-FZHTransferAnimationTests.xctest */,
+				D604027A1DE6CF3E005C3CD2 /* 08-FZHTransferAnimationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D604025D1DE6CF3E005C3CD2 /* 08-FZHTransferAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				D604025E1DE6CF3E005C3CD2 /* AppDelegate.swift */,
+				D60402601DE6CF3E005C3CD2 /* ViewController.swift */,
+				D60402621DE6CF3E005C3CD2 /* Main.storyboard */,
+				D60402651DE6CF3E005C3CD2 /* Assets.xcassets */,
+				D60402671DE6CF3E005C3CD2 /* LaunchScreen.storyboard */,
+				D604026A1DE6CF3E005C3CD2 /* Info.plist */,
+			);
+			path = "08-FZHTransferAnimation";
+			sourceTree = "<group>";
+		};
+		D60402721DE6CF3E005C3CD2 /* 08-FZHTransferAnimationTests */ = {
+			isa = PBXGroup;
+			children = (
+				D60402731DE6CF3E005C3CD2 /* _8_FZHTransferAnimationTests.swift */,
+				D60402751DE6CF3E005C3CD2 /* Info.plist */,
+			);
+			path = "08-FZHTransferAnimationTests";
+			sourceTree = "<group>";
+		};
+		D604027D1DE6CF3E005C3CD2 /* 08-FZHTransferAnimationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D604027E1DE6CF3E005C3CD2 /* _8_FZHTransferAnimationUITests.swift */,
+				D60402801DE6CF3E005C3CD2 /* Info.plist */,
+			);
+			path = "08-FZHTransferAnimationUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D604025A1DE6CF3E005C3CD2 /* 08-FZHTransferAnimation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D60402831DE6CF3E005C3CD2 /* Build configuration list for PBXNativeTarget "08-FZHTransferAnimation" */;
+			buildPhases = (
+				D60402571DE6CF3E005C3CD2 /* Sources */,
+				D60402581DE6CF3E005C3CD2 /* Frameworks */,
+				D60402591DE6CF3E005C3CD2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "08-FZHTransferAnimation";
+			productName = "08-FZHTransferAnimation";
+			productReference = D604025B1DE6CF3E005C3CD2 /* 08-FZHTransferAnimation.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D604026E1DE6CF3E005C3CD2 /* 08-FZHTransferAnimationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D60402861DE6CF3E005C3CD2 /* Build configuration list for PBXNativeTarget "08-FZHTransferAnimationTests" */;
+			buildPhases = (
+				D604026B1DE6CF3E005C3CD2 /* Sources */,
+				D604026C1DE6CF3E005C3CD2 /* Frameworks */,
+				D604026D1DE6CF3E005C3CD2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D60402711DE6CF3E005C3CD2 /* PBXTargetDependency */,
+			);
+			name = "08-FZHTransferAnimationTests";
+			productName = "08-FZHTransferAnimationTests";
+			productReference = D604026F1DE6CF3E005C3CD2 /* 08-FZHTransferAnimationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D60402791DE6CF3E005C3CD2 /* 08-FZHTransferAnimationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D60402891DE6CF3E005C3CD2 /* Build configuration list for PBXNativeTarget "08-FZHTransferAnimationUITests" */;
+			buildPhases = (
+				D60402761DE6CF3E005C3CD2 /* Sources */,
+				D60402771DE6CF3E005C3CD2 /* Frameworks */,
+				D60402781DE6CF3E005C3CD2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D604027C1DE6CF3E005C3CD2 /* PBXTargetDependency */,
+			);
+			name = "08-FZHTransferAnimationUITests";
+			productName = "08-FZHTransferAnimationUITests";
+			productReference = D604027A1DE6CF3E005C3CD2 /* 08-FZHTransferAnimationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D60402531DE6CF3E005C3CD2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = FZH;
+				TargetAttributes = {
+					D604025A1DE6CF3E005C3CD2 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 3TQS7A8S7H;
+						ProvisioningStyle = Automatic;
+					};
+					D604026E1DE6CF3E005C3CD2 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 3TQS7A8S7H;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D604025A1DE6CF3E005C3CD2;
+					};
+					D60402791DE6CF3E005C3CD2 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 3TQS7A8S7H;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D604025A1DE6CF3E005C3CD2;
+					};
+				};
+			};
+			buildConfigurationList = D60402561DE6CF3E005C3CD2 /* Build configuration list for PBXProject "08-FZHTransferAnimation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D60402521DE6CF3E005C3CD2;
+			productRefGroup = D604025C1DE6CF3E005C3CD2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D604025A1DE6CF3E005C3CD2 /* 08-FZHTransferAnimation */,
+				D604026E1DE6CF3E005C3CD2 /* 08-FZHTransferAnimationTests */,
+				D60402791DE6CF3E005C3CD2 /* 08-FZHTransferAnimationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D60402591DE6CF3E005C3CD2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D60402691DE6CF3E005C3CD2 /* LaunchScreen.storyboard in Resources */,
+				D60402661DE6CF3E005C3CD2 /* Assets.xcassets in Resources */,
+				D60402641DE6CF3E005C3CD2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D604026D1DE6CF3E005C3CD2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D60402781DE6CF3E005C3CD2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D60402571DE6CF3E005C3CD2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D60402611DE6CF3E005C3CD2 /* ViewController.swift in Sources */,
+				D604025F1DE6CF3E005C3CD2 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D604026B1DE6CF3E005C3CD2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D60402741DE6CF3E005C3CD2 /* _8_FZHTransferAnimationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D60402761DE6CF3E005C3CD2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D604027F1DE6CF3E005C3CD2 /* _8_FZHTransferAnimationUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D60402711DE6CF3E005C3CD2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D604025A1DE6CF3E005C3CD2 /* 08-FZHTransferAnimation */;
+			targetProxy = D60402701DE6CF3E005C3CD2 /* PBXContainerItemProxy */;
+		};
+		D604027C1DE6CF3E005C3CD2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D604025A1DE6CF3E005C3CD2 /* 08-FZHTransferAnimation */;
+			targetProxy = D604027B1DE6CF3E005C3CD2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D60402621DE6CF3E005C3CD2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D60402631DE6CF3E005C3CD2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D60402671DE6CF3E005C3CD2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D60402681DE6CF3E005C3CD2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D60402811DE6CF3E005C3CD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D60402821DE6CF3E005C3CD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D60402841DE6CF3E005C3CD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3TQS7A8S7H;
+				INFOPLIST_FILE = "08-FZHTransferAnimation/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fengzhihao.-8-FZHTransferAnimation";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D60402851DE6CF3E005C3CD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3TQS7A8S7H;
+				INFOPLIST_FILE = "08-FZHTransferAnimation/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fengzhihao.-8-FZHTransferAnimation";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		D60402871DE6CF3E005C3CD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 3TQS7A8S7H;
+				INFOPLIST_FILE = "08-FZHTransferAnimationTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fengzhihao.-8-FZHTransferAnimationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/08-FZHTransferAnimation.app/08-FZHTransferAnimation";
+			};
+			name = Debug;
+		};
+		D60402881DE6CF3E005C3CD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 3TQS7A8S7H;
+				INFOPLIST_FILE = "08-FZHTransferAnimationTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fengzhihao.-8-FZHTransferAnimationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/08-FZHTransferAnimation.app/08-FZHTransferAnimation";
+			};
+			name = Release;
+		};
+		D604028A1DE6CF3E005C3CD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 3TQS7A8S7H;
+				INFOPLIST_FILE = "08-FZHTransferAnimationUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fengzhihao.-8-FZHTransferAnimationUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "08-FZHTransferAnimation";
+			};
+			name = Debug;
+		};
+		D604028B1DE6CF3E005C3CD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 3TQS7A8S7H;
+				INFOPLIST_FILE = "08-FZHTransferAnimationUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fengzhihao.-8-FZHTransferAnimationUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "08-FZHTransferAnimation";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D60402561DE6CF3E005C3CD2 /* Build configuration list for PBXProject "08-FZHTransferAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D60402811DE6CF3E005C3CD2 /* Debug */,
+				D60402821DE6CF3E005C3CD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D60402831DE6CF3E005C3CD2 /* Build configuration list for PBXNativeTarget "08-FZHTransferAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D60402841DE6CF3E005C3CD2 /* Debug */,
+				D60402851DE6CF3E005C3CD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D60402861DE6CF3E005C3CD2 /* Build configuration list for PBXNativeTarget "08-FZHTransferAnimationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D60402871DE6CF3E005C3CD2 /* Debug */,
+				D60402881DE6CF3E005C3CD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D60402891DE6CF3E005C3CD2 /* Build configuration list for PBXNativeTarget "08-FZHTransferAnimationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D604028A1DE6CF3E005C3CD2 /* Debug */,
+				D604028B1DE6CF3E005C3CD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D60402531DE6CF3E005C3CD2 /* Project object */;
+}
