@@ -1,14 +1,14 @@
 //
-//  _8_FZHTransferAnimationUITests.swift
-//  08-FZHTransferAnimationUITests
+//  _8_ADScrollViewUITests.swift
+//  08-ADScrollViewUITests
 //
-//  Created by 冯志浩 on 2016/11/24.
+//  Created by 冯志浩 on 2016/11/28.
 //  Copyright © 2016年 FZH. All rights reserved.
 //
 
 import XCTest
 
-class _8_FZHTransferAnimationUITests: XCTestCase {
+class _8_ADScrollViewUITests: XCTestCase {
         
     override func setUp() {
         super.setUp()

@@ -15,7 +15,7 @@ class FZHScrollView: UIView,UIScrollViewDelegate {
     let pageCtrl = UIPageControl()
     var fzhSuperView = UIView()
     var fzhFrame = CGRect()
-    var timer = Timer.init()
+    var timer = Timer()
     var pageNum = 1
     var fzhPicArray:NSMutableArray = []
     
@@ -91,18 +91,6 @@ class FZHScrollView: UIView,UIScrollViewDelegate {
         self.addSubview(pageCtrl)
     }
     
-    //MARK: UIScrollViewDelegate
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        if scrollView.contentOffset.x == 0 {//如果在第0个位置，把滑动位置设置为最后一张
-            scrollView.contentOffset = CGPoint(x: CGFloat(fzhPicArray.count - 2) * SCREEN_WIDTH, y:  0)
-            pageCtrl.currentPage = fzhPicArray.count - 3
-        }else if scrollView.contentOffset.x == CGFloat(fzhPicArray.count - 1) * SCREEN_WIDTH{//如果在第imageNum + 1个位置，把滑动位置设置为第一张
-            scrollView.contentOffset = CGPoint(x: SCREEN_WIDTH, y: 0)
-            pageCtrl.currentPage = 0
-        }else{
-            pageCtrl.currentPage = Int((scrollView.contentOffset.x + SCREEN_WIDTH * 0.5)/SCREEN_WIDTH) - 1
-        }
-    }
     
     func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
         timer.invalidate()
