@@ -40,4 +40,5 @@
 <img src="https://github.com/fengzhihao123/FZHKit/blob/master/06-FZHBlurred/屏幕快照%202016-11-02%20下午5.31.49.png" width="300" height="500">
 
 <h2><a name="C8">08 - 轮播通知</a>
+
 ![gif](https://github.com/fengzhihao123/FZHKit/blob/master/08-ADScrollView/08-ADScorllView.gif)
