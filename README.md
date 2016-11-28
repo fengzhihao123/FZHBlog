@@ -13,6 +13,8 @@
 
 <a href="#C6">06 - 模糊视图</a>
 
+<a href="C8">08 - 轮播通知</a>
+
 <h2><a name="C1">01 -抽屉视图</a></h2>
 
 ![gif](https://github.com/fengzhihao123/CommonKnowledgeSummary/blob/master/01-FZHDrawerView/01-DrawerView.gif)
@@ -36,3 +38,6 @@
 <h2><a name="C6">06 - 模糊视图</a>
 
 <img src="https://github.com/fengzhihao123/FZHKit/blob/master/06-FZHBlurred/屏幕快照%202016-11-02%20下午5.31.49.png" width="300" height="500">
+
+<h2><a name="C8">08 - 轮播通知</a>
+![gif](https://github.com/fengzhihao123/FZHKit/blob/master/08-ADScrollView/08-ADScorllView.gif)
