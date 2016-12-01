@@ -1,5 +1,7 @@
 # iOS 常用的知识点总结
 
+如果是刚接触Swift的话，可以看一下我的这个[项目](https://github.com/fengzhihao123/UI-Swift)，适合新手快速用Swift熟悉UI。
+
 
 <a href="#C1">01 - 抽屉视图</a>
 
