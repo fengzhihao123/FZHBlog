@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		725011D25BD1ADF99D70793C /* libPods-07-EnlargeImageUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D3C803A766537644C2DC7060 /* libPods-07-EnlargeImageUITests.a */; };
 		92B8FAE9D4D490E7F4CEEB29 /* libPods-07-EnlargeImageTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD7074C42531B321867CEB48 /* libPods-07-EnlargeImageTests.a */; };
-		D60402171DE68A41005C3CD2 /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = D60402161DE68A41005C3CD2 /* Test.m */; };
 		D6287EA21DE58002002294BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6287EA11DE58002002294BE /* AppDelegate.swift */; };
 		D6287EA41DE58002002294BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6287EA31DE58002002294BE /* ViewController.swift */; };
 		D6287EA71DE58002002294BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6287EA51DE58002002294BE /* Main.storyboard */; };
@@ -48,8 +47,6 @@
 		D0B025CB4D533C4D678846B9 /* Pods-07-EnlargeImageUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-07-EnlargeImageUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-07-EnlargeImageUITests/Pods-07-EnlargeImageUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D3C803A766537644C2DC7060 /* libPods-07-EnlargeImageUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-07-EnlargeImageUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D60402141DE68A41005C3CD2 /* 07-EnlargeImage-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "07-EnlargeImage-Bridging-Header.h"; sourceTree = "<group>"; };
-		D60402151DE68A41005C3CD2 /* Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
-		D60402161DE68A41005C3CD2 /* Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test.m; sourceTree = "<group>"; };
 		D6287E9E1DE58002002294BE /* 07-EnlargeImage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "07-EnlargeImage.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6287EA11DE58002002294BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D6287EA31DE58002002294BE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -141,8 +138,6 @@
 				D6287EA31DE58002002294BE /* ViewController.swift */,
 				D6287ED11DE59219002294BE /* FZHEnlargeImageView.swift */,
 				D6C9CD851DE5D36A006B39A8 /* FZHPopView.swift */,
-				D60402151DE68A41005C3CD2 /* Test.h */,
-				D60402161DE68A41005C3CD2 /* Test.m */,
 				D6287ECF1DE580F7002294BE /* dota2.jpg */,
 				D6287EA51DE58002002294BE /* Main.storyboard */,
 				D6287EA81DE58002002294BE /* Assets.xcassets */,
@@ -467,7 +462,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D60402171DE68A41005C3CD2 /* Test.m in Sources */,
 				D6287EA41DE58002002294BE /* ViewController.swift in Sources */,
 				D6C9CD861DE5D36A006B39A8 /* FZHPopView.swift in Sources */,
 				D6287ED21DE59219002294BE /* FZHEnlargeImageView.swift in Sources */,
