@@ -17,7 +17,7 @@
 
 <a href="#C8">08 - 轮播通知</a>
 
-<a href="#C8">09 - tableView联动</a>
+<a href="#C9">09 - tableView联动</a>
 
 
 <h2><a name="C1">01 -抽屉视图</a></h2>
