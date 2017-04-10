@@ -19,6 +19,8 @@
 
 <a href="#C9">09 - tableView联动</a>
 
+<a href="#C10">10 - 扫一扫</a>
+
 
 <h2><a name="C1">01 -抽屉视图</a></h2>
 
@@ -51,3 +53,7 @@
 <h2><a name="C9">09 - tableView联动</a></h2>
 
 ![gif](https://github.com/fengzhihao123/FZHKit/blob/master/09-TableViewLinkage/09-tableViewLinkage.gif)
+
+<h2><a name="C10">10 - 扫一扫</a></h2>
+
+![pic](https://github.com/fengzhihao123/FZHKit/blob/master/10-ScanCode/01-ScanCode(OC)/scan.jpeg)
