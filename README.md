@@ -56,4 +56,4 @@
 
 <h2><a name="C10">10 - 扫一扫</a></h2>
 
-![pic](https://github.com/fengzhihao123/FZHKit/blob/master/10-ScanCode/01-ScanCode(OC)/scan.jpeg)
+<img src="https://github.com/fengzhihao123/FZHKit/blob/master/10-ScanCode/01-ScanCode(OC)/scan.jpeg" width="300" height="500">
