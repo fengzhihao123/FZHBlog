@@ -217,7 +217,7 @@ UINavigationControllerDelegate
         [self.navigationController popViewControllerAnimated:YES];
     }
 }
-
+//扫描成功的提示音
 - (void)scanSuccess {
     AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
     AudioServicesPlaySystemSound(1109);
