@@ -9,12 +9,21 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    var scrollView: FZHAutoScrollView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        scrollView = FZHAutoScrollView(frame: CGRect(x: 0, y: 300, width: view.frame.width, height: 200), images: ["1", "2", "3", "4"], transition: .addFirstAndLast)
+        scrollView.delegate = self
+        view.addSubview(scrollView)
     }
+}
 
-
+extension ViewController: FZHAutoScrollViewDelegate {
+    func fzhScrollView(_ fzhScrollView: FZHAutoScrollView, didSelectItemAt indexPath: IndexPath) {
+        print(indexPath)
+    }
 }
 

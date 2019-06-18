@@ -12,6 +12,8 @@
 		3A95A22022AE44A900C4CC49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A95A21E22AE44A900C4CC49 /* Main.storyboard */; };
 		3A95A22222AE44AB00C4CC49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A95A22122AE44AB00C4CC49 /* Assets.xcassets */; };
 		3A95A22522AE44AB00C4CC49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A95A22322AE44AB00C4CC49 /* LaunchScreen.storyboard */; };
+		3A95A23122B1ED1A00C4CC49 /* FZHAutoScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A95A23022B1ED1A00C4CC49 /* FZHAutoScrollView.swift */; };
+		3A95A23322B1EDBB00C4CC49 /* FZHAutoScrollCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A95A23222B1EDBB00C4CC49 /* FZHAutoScrollCVCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		3A95A22122AE44AB00C4CC49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A95A22422AE44AB00C4CC49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A95A22622AE44AB00C4CC49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A95A23022B1ED1A00C4CC49 /* FZHAutoScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZHAutoScrollView.swift; sourceTree = "<group>"; };
+		3A95A23222B1EDBB00C4CC49 /* FZHAutoScrollCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZHAutoScrollCVCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,7 @@
 		3A95A22D22AE44D800C4CC49 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				3A95A22F22B1ECC000C4CC49 /* FZHAutoScrollView */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -86,6 +91,15 @@
 				3A95A22322AE44AB00C4CC49 /* LaunchScreen.storyboard */,
 			);
 			path = "Support files";
+			sourceTree = "<group>";
+		};
+		3A95A22F22B1ECC000C4CC49 /* FZHAutoScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				3A95A23022B1ED1A00C4CC49 /* FZHAutoScrollView.swift */,
+				3A95A23222B1EDBB00C4CC49 /* FZHAutoScrollCVCell.swift */,
+			);
+			path = FZHAutoScrollView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,6 +174,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A95A21D22AE44A900C4CC49 /* ViewController.swift in Sources */,
+				3A95A23322B1EDBB00C4CC49 /* FZHAutoScrollCVCell.swift in Sources */,
+				3A95A23122B1ED1A00C4CC49 /* FZHAutoScrollView.swift in Sources */,
 				3A95A21B22AE44A900C4CC49 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
