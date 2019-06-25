@@ -14,6 +14,7 @@
 		3A95A22522AE44AB00C4CC49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A95A22322AE44AB00C4CC49 /* LaunchScreen.storyboard */; };
 		3A95A23122B1ED1A00C4CC49 /* FZHAutoScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A95A23022B1ED1A00C4CC49 /* FZHAutoScrollView.swift */; };
 		3A95A23322B1EDBB00C4CC49 /* FZHAutoScrollCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A95A23222B1EDBB00C4CC49 /* FZHAutoScrollCVCell.swift */; };
+		3AC5E8BA22C1BFC8002D50CC /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC5E8B922C1BFC8002D50CC /* UIImage+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		3A95A22622AE44AB00C4CC49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A95A23022B1ED1A00C4CC49 /* FZHAutoScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZHAutoScrollView.swift; sourceTree = "<group>"; };
 		3A95A23222B1EDBB00C4CC49 /* FZHAutoScrollCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZHAutoScrollCVCell.swift; sourceTree = "<group>"; };
+		3AC5E8B922C1BFC8002D50CC /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		3A95A21922AE44A900C4CC49 /* FZHKit */ = {
 			isa = PBXGroup;
 			children = (
+				3AC5E8B722C1BF9C002D50CC /* Extension */,
 				3A95A22D22AE44D800C4CC49 /* UIKit */,
 				3A95A22C22AE44D000C4CC49 /* Foundation */,
 				3A95A21A22AE44A900C4CC49 /* AppDelegate.swift */,
@@ -100,6 +103,22 @@
 				3A95A23222B1EDBB00C4CC49 /* FZHAutoScrollCVCell.swift */,
 			);
 			path = FZHAutoScrollView;
+			sourceTree = "<group>";
+		};
+		3AC5E8B722C1BF9C002D50CC /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3AC5E8B822C1BFB1002D50CC /* UIImage */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		3AC5E8B822C1BFB1002D50CC /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				3AC5E8B922C1BFC8002D50CC /* UIImage+Extension.swift */,
+			);
+			path = UIImage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,6 +194,7 @@
 			files = (
 				3A95A21D22AE44A900C4CC49 /* ViewController.swift in Sources */,
 				3A95A23322B1EDBB00C4CC49 /* FZHAutoScrollCVCell.swift in Sources */,
+				3AC5E8BA22C1BFC8002D50CC /* UIImage+Extension.swift in Sources */,
 				3A95A23122B1ED1A00C4CC49 /* FZHAutoScrollView.swift in Sources */,
 				3A95A21B22AE44A900C4CC49 /* AppDelegate.swift in Sources */,
 			);
