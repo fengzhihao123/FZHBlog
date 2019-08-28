@@ -25,7 +25,7 @@ class FZHCardPresentationController: UIPresentationController {
         guard let container = containerView else { return }
         blurView.translatesAutoresizingMaskIntoConstraints = false
         container.addSubview(blurView)
-        edges(to: container)
+        blurView.edges(to: container)
         blurView.alpha = 0.0
         
         presentingViewController.beginAppearanceTransition(false, animated: false)
@@ -46,14 +46,5 @@ class FZHCardPresentationController: UIPresentationController {
         presentedViewController.transitionCoordinator?.animate(alongsideTransition: { (ctx) in
             self.blurView.alpha = 0.0
         }, completion: nil)
-    }
-    
-    func edges(to view: UIView, top: CGFloat=0, left: CGFloat=0, bottom: CGFloat=0, right: CGFloat=0) {
-        NSLayoutConstraint.activate([
-            blurView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: left),
-            blurView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: right),
-            blurView.topAnchor.constraint(equalTo: view.topAnchor, constant: top),
-            blurView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: bottom)
-            ])
     }
 }

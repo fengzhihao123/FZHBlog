@@ -44,12 +44,7 @@ extension FZHDismissCardAnimator: UIViewControllerAnimatedTransitioning {
         let cardDetailView = ctx.view(forKey: .from)!
         
         let animatedContainerView = UIView()
-        if FZHGlobalConstants.isEnabledDebugAnimatingViews {
-            animatedContainerView.layer.borderColor = UIColor.yellow.cgColor
-            animatedContainerView.layer.borderWidth = 4
-            cardDetailView.layer.borderColor = UIColor.red.cgColor
-            cardDetailView.layer.borderWidth = 2
-        }
+        
         animatedContainerView.translatesAutoresizingMaskIntoConstraints = false
         cardDetailView.translatesAutoresizingMaskIntoConstraints = false
         

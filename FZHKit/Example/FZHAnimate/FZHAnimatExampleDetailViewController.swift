@@ -76,9 +76,9 @@ extension FZHAnimatExampleDetailViewController {
         scrollView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             scrollView.topAnchor.constraint(equalTo: view.topAnchor),
-            scrollView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            scrollView.widthAnchor.constraint(equalTo: view.widthAnchor),
-            scrollView.heightAnchor.constraint(equalTo: view.heightAnchor)
+            scrollView.leftAnchor.constraint(equalTo: view.leftAnchor),
+            scrollView.rightAnchor.constraint(equalTo: view.rightAnchor),
+            scrollView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
             ])
 
         cardContentView.viewModel = cardViewModel
@@ -93,15 +93,15 @@ extension FZHAnimatExampleDetailViewController {
         scrollView.panGestureRecognizer.require(toFail: dismissalScreenEdgePanGesture)
         
         scrollView.addSubview(cardContentView)
-
+        
         cardContentView.translatesAutoresizingMaskIntoConstraints = false
+        cardBottomToRootBottomConstraint = cardContentView.heightAnchor.constraint(equalTo: view.widthAnchor, multiplier: 1.3)
         NSLayoutConstraint.activate([
             cardContentView.topAnchor.constraint(equalTo: scrollView.topAnchor),
-            cardContentView.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor),
+            cardContentView.leftAnchor.constraint(equalTo: scrollView.leftAnchor),
             cardContentView.widthAnchor.constraint(equalTo: scrollView.widthAnchor),
-            cardContentView.heightAnchor.constraint(equalTo: cardContentView.widthAnchor, multiplier: 1.3)
+            cardContentView.heightAnchor.constraint(equalTo: scrollView.widthAnchor, multiplier: 1.3)
             ])
-        
         loadViewIfNeeded()
         view.addGestureRecognizer(dismissalPanGesture)
         view.addGestureRecognizer(dismissalScreenEdgePanGesture)
@@ -179,7 +179,6 @@ extension FZHAnimatExampleDetailViewController {
                 return animator
             }
         }
-        
         switch gesture.state {
         case .began:
             dismissalAnimator = createInteractiveDismissalAnimatorIfNeeded()

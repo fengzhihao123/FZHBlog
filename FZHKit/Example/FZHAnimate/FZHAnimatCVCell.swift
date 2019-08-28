@@ -47,6 +47,22 @@ class FZHAnimatCVCell: UICollectionViewCell {
         disabledHighlightedAnimation = false
     }
     
+    // Make it appears very responsive to touch
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+        animate(isHighlighted: true)
+    }
+    
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesEnded(touches, with: event)
+        animate(isHighlighted: false)
+    }
+    
+    override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesCancelled(touches, with: event)
+        animate(isHighlighted: false)
+    }
+    
     private func animate(isHighlighted: Bool, completion: ((Bool) -> Void)? = nil) {
         if disabledHighlightedAnimation { return }
         let animationOptions: AnimationOptions = FZHGlobalConstants.isEnabledAllowsUserInteractionWhileHighlightingCard ? [.allowUserInteraction] : []
