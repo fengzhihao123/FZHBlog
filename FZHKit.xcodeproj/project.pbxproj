@@ -15,6 +15,19 @@
 		3A95A23122B1ED1A00C4CC49 /* FZHAutoScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A95A23022B1ED1A00C4CC49 /* FZHAutoScrollView.swift */; };
 		3A95A23322B1EDBB00C4CC49 /* FZHAutoScrollCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A95A23222B1EDBB00C4CC49 /* FZHAutoScrollCVCell.swift */; };
 		3AC5E8BA22C1BFC8002D50CC /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC5E8B922C1BFC8002D50CC /* UIImage+Extension.swift */; };
+		3AD1B4182313C6EA007B7570 /* FZHStatusBarAnimatableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD1B4172313C6EA007B7570 /* FZHStatusBarAnimatableViewController.swift */; };
+		3AD1B41D2313CE98007B7570 /* FZHAnimatExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD1B41C2313CE98007B7570 /* FZHAnimatExampleViewController.swift */; };
+		3AD1B41F2313D08B007B7570 /* FZHAnimatCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD1B41E2313D08B007B7570 /* FZHAnimatCVCell.swift */; };
+		3AD1B4212313DBCB007B7570 /* FZHCardPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD1B4202313DBCB007B7570 /* FZHCardPresentationController.swift */; };
+		3AD1B4232313DE89007B7570 /* FZHCardTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD1B4222313DE89007B7570 /* FZHCardTransition.swift */; };
+		3AD1B4252313DF84007B7570 /* FZHPresentCardAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD1B4242313DF84007B7570 /* FZHPresentCardAnimator.swift */; };
+		3AD1B4272313DF93007B7570 /* FZHDismissCardAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD1B4262313DF93007B7570 /* FZHDismissCardAnimator.swift */; };
+		3AD1B429231619E2007B7570 /* FZHCardContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD1B428231619E2007B7570 /* FZHCardContentView.swift */; };
+		3AD1B42B23161F3A007B7570 /* FZHGlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD1B42A23161F3A007B7570 /* FZHGlobalConstants.swift */; };
+		3AD1B42D2316278C007B7570 /* FZHAnimatExampleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD1B42C2316278C007B7570 /* FZHAnimatExampleDetailViewController.swift */; };
+		3AD1B431231658FC007B7570 /* drowning.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AD1B42E231658FC007B7570 /* drowning.png */; };
+		3AD1B432231658FC007B7570 /* img1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AD1B42F231658FC007B7570 /* img1.png */; };
+		3AD1B433231658FC007B7570 /* img2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3AD1B430231658FC007B7570 /* img2.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +41,19 @@
 		3A95A23022B1ED1A00C4CC49 /* FZHAutoScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZHAutoScrollView.swift; sourceTree = "<group>"; };
 		3A95A23222B1EDBB00C4CC49 /* FZHAutoScrollCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZHAutoScrollCVCell.swift; sourceTree = "<group>"; };
 		3AC5E8B922C1BFC8002D50CC /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		3AD1B4172313C6EA007B7570 /* FZHStatusBarAnimatableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZHStatusBarAnimatableViewController.swift; sourceTree = "<group>"; };
+		3AD1B41C2313CE98007B7570 /* FZHAnimatExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZHAnimatExampleViewController.swift; sourceTree = "<group>"; };
+		3AD1B41E2313D08B007B7570 /* FZHAnimatCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZHAnimatCVCell.swift; sourceTree = "<group>"; };
+		3AD1B4202313DBCB007B7570 /* FZHCardPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZHCardPresentationController.swift; sourceTree = "<group>"; };
+		3AD1B4222313DE89007B7570 /* FZHCardTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZHCardTransition.swift; sourceTree = "<group>"; };
+		3AD1B4242313DF84007B7570 /* FZHPresentCardAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZHPresentCardAnimator.swift; sourceTree = "<group>"; };
+		3AD1B4262313DF93007B7570 /* FZHDismissCardAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZHDismissCardAnimator.swift; sourceTree = "<group>"; };
+		3AD1B428231619E2007B7570 /* FZHCardContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZHCardContentView.swift; sourceTree = "<group>"; };
+		3AD1B42A23161F3A007B7570 /* FZHGlobalConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZHGlobalConstants.swift; sourceTree = "<group>"; };
+		3AD1B42C2316278C007B7570 /* FZHAnimatExampleDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZHAnimatExampleDetailViewController.swift; sourceTree = "<group>"; };
+		3AD1B42E231658FC007B7570 /* drowning.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = drowning.png; sourceTree = "<group>"; };
+		3AD1B42F231658FC007B7570 /* img1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img1.png; sourceTree = "<group>"; };
+		3AD1B430231658FC007B7570 /* img2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img2.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +86,7 @@
 		3A95A21922AE44A900C4CC49 /* FZHKit */ = {
 			isa = PBXGroup;
 			children = (
+				3AD1B41A2313CE77007B7570 /* Example */,
 				3AC5E8B722C1BF9C002D50CC /* Extension */,
 				3A95A22D22AE44D800C4CC49 /* UIKit */,
 				3A95A22C22AE44D000C4CC49 /* Foundation */,
@@ -81,6 +108,7 @@
 		3A95A22D22AE44D800C4CC49 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				3AD1B4162313C6BD007B7570 /* FZHTodayAnimat */,
 				3A95A22F22B1ECC000C4CC49 /* FZHAutoScrollView */,
 			);
 			path = UIKit;
@@ -119,6 +147,41 @@
 				3AC5E8B922C1BFC8002D50CC /* UIImage+Extension.swift */,
 			);
 			path = UIImage;
+			sourceTree = "<group>";
+		};
+		3AD1B4162313C6BD007B7570 /* FZHTodayAnimat */ = {
+			isa = PBXGroup;
+			children = (
+				3AD1B4172313C6EA007B7570 /* FZHStatusBarAnimatableViewController.swift */,
+				3AD1B4202313DBCB007B7570 /* FZHCardPresentationController.swift */,
+				3AD1B4222313DE89007B7570 /* FZHCardTransition.swift */,
+				3AD1B4242313DF84007B7570 /* FZHPresentCardAnimator.swift */,
+				3AD1B4262313DF93007B7570 /* FZHDismissCardAnimator.swift */,
+				3AD1B428231619E2007B7570 /* FZHCardContentView.swift */,
+				3AD1B42A23161F3A007B7570 /* FZHGlobalConstants.swift */,
+			);
+			path = FZHTodayAnimat;
+			sourceTree = "<group>";
+		};
+		3AD1B41A2313CE77007B7570 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				3AD1B41B2313CE81007B7570 /* FZHAnimate */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
+		3AD1B41B2313CE81007B7570 /* FZHAnimate */ = {
+			isa = PBXGroup;
+			children = (
+				3AD1B42E231658FC007B7570 /* drowning.png */,
+				3AD1B42F231658FC007B7570 /* img1.png */,
+				3AD1B430231658FC007B7570 /* img2.jpg */,
+				3AD1B41C2313CE98007B7570 /* FZHAnimatExampleViewController.swift */,
+				3AD1B41E2313D08B007B7570 /* FZHAnimatCVCell.swift */,
+				3AD1B42C2316278C007B7570 /* FZHAnimatExampleDetailViewController.swift */,
+			);
+			path = FZHAnimate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,8 +243,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A95A22522AE44AB00C4CC49 /* LaunchScreen.storyboard in Resources */,
+				3AD1B432231658FC007B7570 /* img1.png in Resources */,
 				3A95A22222AE44AB00C4CC49 /* Assets.xcassets in Resources */,
 				3A95A22022AE44A900C4CC49 /* Main.storyboard in Resources */,
+				3AD1B433231658FC007B7570 /* img2.jpg in Resources */,
+				3AD1B431231658FC007B7570 /* drowning.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,9 +259,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A95A21D22AE44A900C4CC49 /* ViewController.swift in Sources */,
+				3AD1B41D2313CE98007B7570 /* FZHAnimatExampleViewController.swift in Sources */,
 				3A95A23322B1EDBB00C4CC49 /* FZHAutoScrollCVCell.swift in Sources */,
+				3AD1B42D2316278C007B7570 /* FZHAnimatExampleDetailViewController.swift in Sources */,
+				3AD1B4232313DE89007B7570 /* FZHCardTransition.swift in Sources */,
+				3AD1B4272313DF93007B7570 /* FZHDismissCardAnimator.swift in Sources */,
+				3AD1B41F2313D08B007B7570 /* FZHAnimatCVCell.swift in Sources */,
+				3AD1B4182313C6EA007B7570 /* FZHStatusBarAnimatableViewController.swift in Sources */,
+				3AD1B42B23161F3A007B7570 /* FZHGlobalConstants.swift in Sources */,
+				3AD1B4212313DBCB007B7570 /* FZHCardPresentationController.swift in Sources */,
 				3AC5E8BA22C1BFC8002D50CC /* UIImage+Extension.swift in Sources */,
 				3A95A23122B1ED1A00C4CC49 /* FZHAutoScrollView.swift in Sources */,
+				3AD1B4252313DF84007B7570 /* FZHPresentCardAnimator.swift in Sources */,
+				3AD1B429231619E2007B7570 /* FZHCardContentView.swift in Sources */,
 				3A95A21B22AE44A900C4CC49 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
