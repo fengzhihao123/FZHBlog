@@ -48,8 +48,6 @@ class FZHCardPresentationController: UIPresentationController {
         }, completion: nil)
     }
     
-    
-    
     func edges(to view: UIView, top: CGFloat=0, left: CGFloat=0, bottom: CGFloat=0, right: CGFloat=0) {
         NSLayoutConstraint.activate([
             blurView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: left),

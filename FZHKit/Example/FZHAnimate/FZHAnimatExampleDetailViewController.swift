@@ -45,7 +45,8 @@ class FZHAnimatExampleDetailViewController: FZHStatusBarAnimatableViewController
     }()
     
     override var statusBarAnimatableConfig: FZHStatusBarAnimatableConfig {
-        return FZHStatusBarAnimatableConfig(prefersHidden: true, animation: .slide)
+        return FZHStatusBarAnimatableConfig(prefersHidden: true,
+                                            animation: .slide)
     }
     
     override func viewDidLoad() {
@@ -66,14 +67,20 @@ class FZHAnimatExampleDetailViewController: FZHStatusBarAnimatableViewController
 
 extension FZHAnimatExampleDetailViewController {
     func setupSubviews() {
-        
-        scrollView.frame = view.bounds
         scrollView.backgroundColor = UIColor.white
         scrollView.contentInsetAdjustmentBehavior = .never
         scrollView.contentSize = CGSize(width: 0, height: 3000)
         scrollView.delegate = self
         view.addSubview(scrollView)
         
+        scrollView.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            scrollView.topAnchor.constraint(equalTo: view.topAnchor),
+            scrollView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            scrollView.widthAnchor.constraint(equalTo: view.widthAnchor),
+            scrollView.heightAnchor.constraint(equalTo: view.heightAnchor)
+            ])
+
         cardContentView.viewModel = cardViewModel
         cardContentView.setFontState(isHighlighted: isFontStateHighlighted)
         dismissalPanGesture.addTarget(self, action: #selector(handleDismissalPan(gesture:)))
@@ -91,8 +98,8 @@ extension FZHAnimatExampleDetailViewController {
         NSLayoutConstraint.activate([
             cardContentView.topAnchor.constraint(equalTo: scrollView.topAnchor),
             cardContentView.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor),
-            cardContentView.widthAnchor.constraint(equalToConstant: view.bounds.width),
-            cardContentView.heightAnchor.constraint(equalToConstant: 300)
+            cardContentView.widthAnchor.constraint(equalTo: scrollView.widthAnchor),
+            cardContentView.heightAnchor.constraint(equalTo: cardContentView.widthAnchor, multiplier: 1.3)
             ])
         
         loadViewIfNeeded()

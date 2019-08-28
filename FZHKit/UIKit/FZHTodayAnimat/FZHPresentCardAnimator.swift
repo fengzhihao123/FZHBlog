@@ -58,14 +58,14 @@ extension FZHPresentCardAnimator: UIViewControllerAnimatedTransitioning {
         interruptibleAnimator(using: transitionContext).startAnimation()
     }
     
-    func animationEnded(_ transitionCompleted: Bool) {
-        // 4.
-        transitionDriver = nil
-    }
-    
     func interruptibleAnimator(using transitionContext: UIViewControllerContextTransitioning) -> UIViewImplicitlyAnimating {
         // 3.
         return transitionDriver!.animator
+    }
+    
+    func animationEnded(_ transitionCompleted: Bool) {
+        // 4.
+        transitionDriver = nil
     }
 }
 
@@ -88,12 +88,6 @@ final class FZHPresentCardTransitionDriver {
         
         let animatedContainerView = UIView()
         animatedContainerView.translatesAutoresizingMaskIntoConstraints = false
-        if FZHGlobalConstants.isEnabledDebugAnimatingViews {
-            animatedContainerView.layer.borderColor = UIColor.yellow.cgColor
-            animatedContainerView.layer.borderWidth = 4
-            cardDetailView.layer.borderColor = UIColor.red.cgColor
-            cardDetailView.layer.borderWidth = 2
-        }
         container.addSubview(animatedContainerView)
         
         do /* Fix centerX/width/height of animated container to container */ {

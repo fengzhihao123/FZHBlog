@@ -57,12 +57,12 @@ class FZHAnimatExampleViewController: FZHStatusBarAnimatableViewController {
 extension FZHAnimatExampleViewController {
     func setupSubviews() {
         let layout = UICollectionViewFlowLayout()
-        layout.itemSize = CGSize(width: view.bounds.width - 20, height: (view.bounds.width - 20) * 1.2)
+        layout.itemSize = CGSize(width: view.bounds.width - 32, height: (view.bounds.width - 32) * 1.2)
         layout.minimumLineSpacing = 20
         layout.minimumInteritemSpacing = 0
         
         cv = UICollectionView(frame: view.bounds, collectionViewLayout: layout)
-        cv.backgroundColor = UIColor.red
+        cv.backgroundColor = UIColor.white
         cv.delegate = self
         cv.dataSource = self
         cv.register(FZHAnimatCVCell.self, forCellWithReuseIdentifier: FZHAnimatCVCell.identifier)
@@ -88,11 +88,13 @@ extension FZHAnimatExampleViewController: UICollectionViewDelegate, UICollection
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let defaultCell = collectionView.cellForItem(at: indexPath)
         guard let cell = defaultCell as? FZHAnimatCVCell else { return }
-
+        // Freeze highlighted state (or else it will bounce back)
         cell.freezeAnimations()
-
+        // Get current frame on screen
         let currentCellFrame = cell.layer.presentation()?.frame ?? .zero
+        // Convert current frame to screen's coordinates
         let cardPresentationFrameOnScreen = cell.superview!.convert(currentCellFrame, to: nil)
+        // Get card frame without transform in screen's coordinates  (for the dismissing back later to original location)
         let cardFrameWithoutTransform = { () -> CGRect in
             let center = cell.center
             let size = cell.bounds.size
@@ -115,6 +117,7 @@ extension FZHAnimatExampleViewController: UICollectionViewDelegate, UICollection
         
         transition = FZHCardTransition(params: params)
         vc.transitioningDelegate = transition
+        // If `modalPresentationStyle` is not `.fullScreen`, this should be set to true to make status bar depends on presented vc.
         vc.modalPresentationCapturesStatusBarAppearance = true
         vc.modalPresentationStyle = .custom
         

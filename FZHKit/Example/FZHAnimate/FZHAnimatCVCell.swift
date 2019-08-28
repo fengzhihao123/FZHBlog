@@ -47,7 +47,6 @@ class FZHAnimatCVCell: UICollectionViewCell {
         disabledHighlightedAnimation = false
     }
     
-    
     private func animate(isHighlighted: Bool, completion: ((Bool) -> Void)? = nil) {
         if disabledHighlightedAnimation { return }
         let animationOptions: AnimationOptions = FZHGlobalConstants.isEnabledAllowsUserInteractionWhileHighlightingCard ? [.allowUserInteraction] : []
