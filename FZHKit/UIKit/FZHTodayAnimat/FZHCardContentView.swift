@@ -23,6 +23,7 @@ class FZHCardContentView: UIView {
     let imageView = UIImageView(frame: .zero)
     let primaryFont = UIFont.systemFont(ofSize: 20)
     let detailFont = UIFont.systemFont(ofSize: 16)
+    var primaryTopAnchor = NSLayoutConstraint()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -46,11 +47,12 @@ class FZHCardContentView: UIView {
             ])
         
         primaryLabel.translatesAutoresizingMaskIntoConstraints = false
+        primaryTopAnchor = primaryLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: FZHGlobalConstants.cardPrimaryTopAnchorConstant)
         NSLayoutConstraint.activate([
             primaryLabel.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 10),
             primaryLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -10),
             primaryLabel.heightAnchor.constraint(equalToConstant: 20),
-            primaryLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 10)
+            primaryTopAnchor
             ])
         
         detailLabel.translatesAutoresizingMaskIntoConstraints = false

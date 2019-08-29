@@ -13,6 +13,7 @@ class FZHGlobalConstants: NSObject {
     static let statusBarAnimationDuration: TimeInterval = 0.4
     static let cardCornerRadius: CGFloat = 16
     static let dismissalAnimationDuration = 0.6
+    static let cardPrimaryTopAnchorConstant: CGFloat = 10
     
     static let cardVerticalExpandingStyle: FZHCardVerticalExpandingStyle = .fromTop
     

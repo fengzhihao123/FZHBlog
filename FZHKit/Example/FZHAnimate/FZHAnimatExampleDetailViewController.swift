@@ -102,6 +102,8 @@ extension FZHAnimatExampleDetailViewController {
             cardContentView.widthAnchor.constraint(equalTo: scrollView.widthAnchor),
             cardContentView.heightAnchor.constraint(equalTo: view.widthAnchor, multiplier: 1.3)
             ])
+        cardContentView.primaryTopAnchor.constant = UIApplication.shared.statusBarFrame.height
+        
         loadViewIfNeeded()
         view.addGestureRecognizer(dismissalPanGesture)
         view.addGestureRecognizer(dismissalScreenEdgePanGesture)
@@ -173,6 +175,7 @@ extension FZHAnimatExampleDetailViewController {
                     targetAnimatedView.transform = .init(scaleX: targetShrinkScale, y: targetShrinkScale)
                     targetAnimatedView.subviews.first?.layer.cornerRadius = targetCornerRadius
                 })
+                
                 animator.isReversed = false
                 animator.pauseAnimation()
                 animator.fractionComplete = progress
@@ -192,6 +195,8 @@ extension FZHAnimatExampleDetailViewController {
             dismissalAnimator!.fractionComplete = actualProgress
             
             if isDismissalSuccess {
+                cardContentView.primaryTopAnchor.constant = FZHGlobalConstants.cardPrimaryTopAnchorConstant
+                
                 dismissalAnimator!.stopAnimation(false)
                 dismissalAnimator!.addCompletion { [unowned self] (pos) in
                     switch pos {
