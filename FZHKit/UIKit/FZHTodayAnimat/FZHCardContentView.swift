@@ -21,17 +21,20 @@ class FZHCardContentView: UIView {
     let primaryLabel = UILabel(frame: .zero)
     let detailLabel = UILabel(frame: .zero)
     let imageView = UIImageView(frame: .zero)
+    let primaryFont = UIFont.systemFont(ofSize: 20)
+    let detailFont = UIFont.systemFont(ofSize: 16)
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        backgroundColor = UIColor.green
+        
+        primaryLabel.font = primaryFont
+        detailLabel.font = detailFont
         addSubview(imageView)
         addSubview(primaryLabel)
         addSubview(detailLabel)
         
         setupConstraints()
     }
-    
     
     func setupConstraints() {
         imageView.translatesAutoresizingMaskIntoConstraints = false
@@ -72,11 +75,11 @@ class FZHCardContentView: UIView {
     func setFontState(isHighlighted: Bool) {
         // This "connects" highlighted (pressedDown) font's sizes with the destination card's font sizes
         if isHighlighted {
-            primaryLabel.font = UIFont.systemFont(ofSize: 36 * FZHGlobalConstants.cardHighlightedFactor, weight: .bold)
-            detailLabel.font = UIFont.systemFont(ofSize: 18 * FZHGlobalConstants.cardHighlightedFactor, weight: .semibold)
+            primaryLabel.font = UIFont.systemFont(ofSize: 20 * FZHGlobalConstants.cardHighlightedFactor, weight: .regular)
+            detailLabel.font = UIFont.systemFont(ofSize: 16 * FZHGlobalConstants.cardHighlightedFactor, weight: .regular)
         } else {
-            primaryLabel.font = UIFont.systemFont(ofSize: 36, weight: .bold)
-            detailLabel.font = UIFont.systemFont(ofSize: 18, weight: .semibold)
+            primaryLabel.font = UIFont.systemFont(ofSize: 20, weight: .regular)
+            detailLabel.font = UIFont.systemFont(ofSize: 16, weight: .regular)
         }
     }
 }

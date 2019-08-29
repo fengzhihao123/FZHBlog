@@ -70,10 +70,10 @@ extension FZHDismissCardAnimator: UIViewControllerAnimatedTransitioning {
         container.layoutIfNeeded()
         
         // Force card filling bottom
-        let stretchCardToFillBottom = screens.cardDetail.cardContentView.bottomAnchor.constraint(equalTo: cardDetailView.bottomAnchor)
+//        let stretchCardToFillBottom = screens.cardDetail.cardContentView.bottomAnchor.constraint(equalTo: cardDetailView.bottomAnchor)
         
         func animateCardViewBackToPlace() {
-            stretchCardToFillBottom.isActive = true
+//            stretchCardToFillBottom.isActive = true
             screens.cardDetail.isFontStateHighlighted = false
             // Back to identity
             // NOTE: Animated container view in a way, helps us to not messing up `transform` with `AutoLayout` animation.
@@ -96,10 +96,10 @@ extension FZHDismissCardAnimator: UIViewControllerAnimatedTransitioning {
                 
                 // Remove temporary fixes if not success!
                 topTemporaryFix.isActive = false
-                stretchCardToFillBottom.isActive = false
+//                stretchCardToFillBottom.isActive = false
                 
                 cardDetailView.removeConstraint(topTemporaryFix)
-                cardDetailView.removeConstraint(stretchCardToFillBottom)
+//                cardDetailView.removeConstraint(stretchCardToFillBottom)
                 
                 container.removeConstraints(container.constraints)
                 

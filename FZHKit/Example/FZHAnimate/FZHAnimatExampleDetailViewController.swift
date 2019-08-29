@@ -95,12 +95,12 @@ extension FZHAnimatExampleDetailViewController {
         scrollView.addSubview(cardContentView)
         
         cardContentView.translatesAutoresizingMaskIntoConstraints = false
-        cardBottomToRootBottomConstraint = cardContentView.heightAnchor.constraint(equalTo: view.widthAnchor, multiplier: 1.3)
+        
         NSLayoutConstraint.activate([
             cardContentView.topAnchor.constraint(equalTo: scrollView.topAnchor),
-            cardContentView.leftAnchor.constraint(equalTo: scrollView.leftAnchor),
+            cardContentView.topAnchor.constraint(equalTo: scrollView.topAnchor),
             cardContentView.widthAnchor.constraint(equalTo: scrollView.widthAnchor),
-            cardContentView.heightAnchor.constraint(equalTo: scrollView.widthAnchor, multiplier: 1.3)
+            cardContentView.heightAnchor.constraint(equalTo: view.widthAnchor, multiplier: 1.3)
             ])
         loadViewIfNeeded()
         view.addGestureRecognizer(dismissalPanGesture)
@@ -163,7 +163,7 @@ extension FZHAnimatExampleDetailViewController {
         let currentLocation = gesture.location(in: nil)
         let progress = isScreenEdgePan ? (gesture.translation(in: targetAnimatedView).x / 100) : (currentLocation.y - startingPoint.y) / 100
         let targetShrinkScale: CGFloat = 0.86
-        let targetCornerRadius: CGFloat = FZHGlobalConstants.cardCornerRadius
+        let targetCornerRadius = FZHGlobalConstants.cardCornerRadius
         
         func createInteractiveDismissalAnimatorIfNeeded() -> UIViewPropertyAnimator {
             if let animator = dismissalAnimator {
@@ -171,7 +171,7 @@ extension FZHAnimatExampleDetailViewController {
             } else {
                 let animator = UIViewPropertyAnimator(duration: 0, curve: .linear, animations: {
                     targetAnimatedView.transform = .init(scaleX: targetShrinkScale, y: targetShrinkScale)
-                    targetAnimatedView.layer.cornerRadius = targetCornerRadius
+                    targetAnimatedView.subviews.first?.layer.cornerRadius = targetCornerRadius
                 })
                 animator.isReversed = false
                 animator.pauseAnimation()
