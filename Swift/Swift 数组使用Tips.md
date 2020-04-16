@@ -23,6 +23,7 @@ for index in 1...20 {
 }
 ```
 执行结果：
+![打印结果](https://github.com/fengzhihao123/FZHBlog/blob/master/images/Array-capacity.png)
 
 通过上述的打印我们可以看到在第1-13次的内存容量都增加了我们指定的 10，但是 14-19次的内存容量并没有变，而最后一次则是增加了 64 次。由此得知，我们指定的内存策略系统只会大概的去按照执行，并不会精确的去执行，所以我们应该使用`capacity` 来获得数组当前确切的容量。
 
