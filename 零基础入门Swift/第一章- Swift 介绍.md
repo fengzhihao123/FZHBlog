@@ -1,5 +1,9 @@
-第一章 - Swift 介绍.md
+## 第一章 - Swift 介绍.md
+
+`本文共 670 字，阅读需 3min。`
+
 通过本章，你可以学习到 Swift 语言介绍、开始学习之前的环境准备以及学完 Swift 可以做哪些事情。
+
 ### Swift 前生今世
 Swift 是由 Apple 在 2014年WWDC 上发布的一门全新语言，它可与 Objective-C 共同运行在 iOS、iPadOS、macOS上。
 
