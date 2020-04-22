@@ -1,4 +1,4 @@
-## Swift 数组使用注意事项
+## 读 Swift 源码系列 - Array
 ### 数组内存增长策略
 当我们向一个数组尾部拼接元素且数组的内存空间不够使用时，数组就会动态的增加内存空间，那么 Swift 的数组内存增长策略是什么？通过查阅 Swift 代码库的 Array.swift 文件的 155 行：`The new storage is a multiple of the old storage's size.`可以得知，它的策略就是将旧的内存空间乘以 2 。下面通过代码来验证一下：
 ```
