@@ -94,9 +94,12 @@ let nsObjs = objs as NSArray
 #### NSArray -> Array
 
 1、当数组的元素是类或者有 @objc 标识时：
-    调用copyWithZone: 函数来拷贝数据，因为 NSArray 是不可变的，所以返回的拷贝数组的地址和原数组地址一致。NSArray 和 Array 的实例都拥有 copy-on-write 的特性，且它俩共享一块内存。
+
+调用copyWithZone: 函数来拷贝数据，因为 NSArray 是不可变的，所以返回的拷贝数组的地址和原数组地址一致。NSArray 和 Array 的实例都拥有 copy-on-write 的特性，且它俩共享一块内存。
+
 2、当数组的元素是基本类型时：
-    将数据拷贝到一块连续的内存中，时间复杂度为O(*n*) 。比如：`NSArray` 转换为 `Array<Int>`，就会产生上述拷贝。在访问数组中的元素时就不需要桥接了。
+
+将数据拷贝到一块连续的内存中，时间复杂度为O(*n*) 。比如：`NSArray` 转换为 `Array<Int>`，就会产生上述拷贝。在访问数组中的元素时就不需要桥接了。
 
 
 
