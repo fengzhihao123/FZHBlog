@@ -1,4 +1,5 @@
 ## 读 Swift 源码系列 - Array
+
 ### 数组内存增长策略
 当我们向一个数组尾部拼接元素且数组的内存空间不够使用时，数组就会动态的增加内存空间，那么 Swift 的数组内存增长策略是什么？通过查阅 Swift 代码库的 Array.swift 文件的 155 行：`The new storage is a multiple of the old storage's size.`可以得知，它的策略就是将旧的内存空间乘以 2 。下面通过代码来验证一下：
 ```
@@ -22,6 +23,7 @@ for index in 1...20 {
     arr.reserveCapacity(factor)
 }
 ```
+
 执行结果：
 ![执行结果](https://github.com/fengzhihao123/FZHBlog/blob/master/images/Array-capacity.png)
 
@@ -59,14 +61,42 @@ print("切片的起始索引:\(slice.startIndex), 结束索引:\(slice.endIndex)
 ```
 可以看到 `slice` 的起始索引是1，结束索引是 3,包含的元素为`[2, 3]`。索引跟原数组是一致的，所以，我们不能通过`slice[0]` 来去访问它的第一个元素，这会造成越界问题。
 
-使用切片还有一个需要注意的问题就是，我们不应该长时间的持有切片。因为即使在原始数组的生命周期结束后，切片也回持有对较大数组的整个内存的引用，而不仅仅是对它所表示的部分的引用。因此，切片的长期存储可能会导致元素的生命周期延长，而这些元素在其他情况下是不可访问的，这就可能会出现内存和对象泄漏。“Long-term storage of `ArraySlice` instances is discouraged...can appear to be memory and object leakage.”[出自 ArraySlice.swift 第65-70行]。
+使用切片还有一个需要注意的问题就是，我们不应该长时间的持有切片。因为即使在原始数组的生命周期结束后，切片也回持有对较大数组的整个内存的引用，而不仅仅是对它所表示的部分的引用。因此，切片的长期存储可能会导致元素的生命周期延长，而这些元素在其他情况下是不可访问的，这就可能会出现内存和对象泄漏。
+
+<b>“Long-term storage of `ArraySlice` instances is discouraged...can appear to be memory and object leakage.”[出自 ArraySlice.swift 第65-70行]。</b>
+
 ### copy on write
 当将一个数组的数据赋值给一个新创建的变量时，它并不会立即拷贝。而是当新创建的变量修改的时候才会发生拷贝。如下：
 ```
 var nums = [1, 2, 3, 4, 5]
-// 未发生拷贝
+// 没有开辟新的内存空间，将nums的数据拷贝过去。此时 newNums 指向的内存地址与 nums 是相同的
 var newNums = nums
-// 发生拷贝
+// 开辟了新的内存空间，此时 newNums 指向的内存地址与 nums 是不同的
 newNums[0] = 10
 ```
+
+
+### NSArray 与 Array 的桥接
+如果数组中的元素是类的实例，或者是用 @obj 协议声明的实例，Array 转换为 NSArray 的时间复杂度和空间复杂度都为O(1)，若不是则复杂度都为O(*n*)。
+
+#### Array -> NSArray
+通过 as 将 Array 转换为 NSArray：
+```
+class Person {
+    var name = "123"
+}
+let p1 = Person()
+
+let objs = Array(repeating: p1, count: 10)
+let nsObjs = objs as NSArray
+```
+
+#### NSArray -> Array
+
+1、当数组的元素是类或者有 @objc 标识时：
+    调用copyWithZone: 函数来拷贝数据，因为 NSArray 是不可变的，所以返回的拷贝数组的地址和原数组地址一致。NSArray 和 Array 的实例都拥有 copy-on-write 的特性，且它俩共享一块内存。
+2、当数组的元素是基本类型时：
+    将数据拷贝到一块连续的内存中，时间复杂度为O(*n*) 。比如：`NSArray` 转换为 `Array<Int>`，就会产生上述拷贝。在访问数组中的元素时就不需要桥接了。
+
+
 
