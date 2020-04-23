@@ -12,4 +12,4 @@
 ## 数据结构与算法
 
 ### 链表
-* [链表的 Swift 实现](https://github.com/fengzhihao123/FZHBlog/blob/master/DataStructureAlgorithm/ListNode/Swift%20实现链表.md)
+* [链表的 Swift 实现](https://github.com/fengzhihao123/FZHBlog/blob/master/DataStructureAlgorithm/ListNode/Swift%20实现单链表.md)
