@@ -1,23 +1,7 @@
 ## Swift 实现链表
-```
-/// L链表
-class LinkNode<E: Equatable>: Equatable {
-    var val: E
-    var next: LinkNode?
-    
-    init(_ val: E, next: LinkNode?) {
-        self.val = val
-        self.next = next
-    }
-    
-    static func == (lhs: LinkNode, rhs: LinkNode) -> Bool {
-        return lhs.val == rhs.val
-    }
-}
 
-/*
- 参考 API 命名规范：insert(_ newElement: Element, at i: Int)
- */
+### 链表的定义
+```
 class LinkList<E: Equatable> {
     var count = 0
     
@@ -37,46 +21,46 @@ class LinkList<E: Equatable> {
         }
     }
     
-    // MARK - 添加
-    func append(_ newElement: E) {
-        let node = LinkNode(newElement, next: nil)
-        
-        if first == nil {
-            first = node
-        } else {
-            let lastNode = getNode(at: count - 1)
-            lastNode.next = node
-        }
-        count += 1
-    }
-
-    func append(contentsOf newElements: [E]) {
-        
+    // MARK - 查找
+    func contains(_ element: E) -> Bool {
+        return getIndex(element) != nil
     }
     
-    func insert(_ newElement: E, at i: Int) {
-        let node = LinkNode(newElement, next: nil)
+    // MARK - 私有方法
+    private func getIndex(_ element: E) -> Int? {
+        let temp = first
+        var curIndex = 0
         
-        if i == 0 {
-            node.next = first
-            first = node
-        } else {
-            let preNode = getNode(at: i - 1)
-            node.next = preNode.next
-            preNode.next = node
+        while temp != nil {
+            if temp?.val == element {
+                return curIndex
+            }
+            curIndex += 1
         }
-        
-        count += 1
+        return nil
     }
     
+    private func getNode(at i: Int) -> LinkNode<E> {
+        if i > count { fatalError("out of Range") }
+        var curNode = first
+        
+        for _ in 0..<i {
+            curNode = curNode?.next
+        }
+        return curNode!
+    }
+}
+```
+### 常用的链表操作
+#### 移除操作
+```
+extension LinkList {
     // MARK - 移除
-    
     func remove(_ deleteElement: E) -> E {
-        let deleteNode = LinkNode(deleteElement, next: nil)
+        guard let i = getIndex(deleteElement) else { fatalError("Not Found") }
         
-        guard let i = getIndex(deleteNode) else { fatalError("Not Found") }
         let preNode = getNode(at: i)
-        preNode.next = deleteNode.next
+        preNode.next = preNode.next?.next
         count -= 1
         
         return deleteElement
@@ -95,55 +79,110 @@ class LinkList<E: Equatable> {
         return removeVal
     }
     
-    func removeFirst() {
-        remove(at: 0)
-    }
+    func removeFirst() { remove(at: 0) }
     
-    func removeLast() {
-        remove(at: count - 1)
-    }
+    func removeLast() { remove(at: count - 1) }
     
     func removeAll() {
         first = nil
         count = 0
     }
-    
-    // MARK - 私有方法
-    private func getIndex(_ node: LinkNode<E>) -> Int? {
-        let temp = first
-        var curIndex = 0
+}
+```
+
+#### 添加操作
+```
+extension LinkList {
+    // MARK - 添加
+    func append(_ newElement: E) {
+        let node = LinkNode(newElement, next: nil)
         
-        while temp != nil {
-            if temp == node {
-                return curIndex
-            }
-            curIndex += 1
+        if first == nil {
+            first = node
+        } else {
+            let lastNode = getNode(at: count - 1)
+            lastNode.next = node
         }
-        return nil
+        count += 1
     }
     
-    private func getNode(at i: Int) -> LinkNode<E> {
-        if i > count { fatalError("out of Range") }
-        var curNode = first
+    func append(contentsOf newElements: [E]) {
+        guard !newElements.isEmpty else { return }
         
-        for _ in 0..<i {
-            curNode = curNode?.next
+        if first == nil {
+            first = LinkNode(newElements.first!)
+            var curNode = first
+            
+            for i in 1..<newElements.count {
+                curNode?.next = LinkNode(newElements[i])
+                curNode = curNode?.next
+            }
+        } else {
+            var lastNode = last
+            for ele in newElements {
+                lastNode?.next = LinkNode(ele)
+                lastNode = lastNode?.next
+            }
         }
-        return curNode!
+        
+        count += newElements.count
+    }
+    
+    func insert(_ newElement: E, at i: Int) {
+        let node = LinkNode(newElement, next: nil)
+        
+        if i == 0 {
+            node.next = first
+            first = node
+        } else {
+            let preNode = getNode(at: i - 1)
+            node.next = preNode.next
+            preNode.next = node
+        }
+        
+        count += 1
     }
 }
-
+```
+#### 反转链表 
+```
 extension LinkList {
-    func printAllLinkNode() {
-        var temp = first
-        var elements = [E]()
+    func reversed(_ isRecursion: Bool = false) {
+        guard !isEmpty else { return }
         
-        while temp != nil {
-            elements.append(temp!.val)
-            temp = temp?.next
+        if isRecursion {
+            first = reversedByRecrusion(first)
+        } else {
+            reversedByLoop()
+        }
+    }
+    
+    private func reversedByRecrusion(_ head: LinkNode<E>?) -> LinkNode<E>? {
+        if head == nil || head?.next == nil {
+            return head
         }
         
-        print(elements)
+        let nextNode = head?.next
+        let curNode = reversedByRecrusion(nextNode)
+        nextNode?.next = head
+        head?.next = nil
+        
+        return curNode
+    }
+    
+    private func reversedByLoop() {
+        var newHead: LinkNode<E>?
+        var curNode = first
+        var nextNode = first?.next
+        while curNode != nil || curNode?.next != nil {
+            curNode?.next = newHead
+            newHead = curNode
+            curNode = nextNode
+            
+            nextNode = curNode?.next
+        }
+        
+        first = newHead
     }
 }
 ```
