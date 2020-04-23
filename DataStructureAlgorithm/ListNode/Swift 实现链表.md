@@ -35,6 +35,7 @@ class LinkList<E: Equatable> {
             if temp?.val == element {
                 return curIndex
             }
+            temp = temp?.next
             curIndex += 1
         }
         return nil
@@ -52,6 +53,7 @@ class LinkList<E: Equatable> {
 }
 ```
 ### 常用的链表操作
+
 #### 移除操作
 ```
 extension LinkList {
@@ -183,6 +185,23 @@ extension LinkList {
         }
         
         first = newHead
+    }
+}
+```
+
+### Debug
+```
+extension LinkList {
+    func printAllLinkNode() {
+        var temp = first
+        var elements = [E]()
+        
+        while temp != nil {
+            elements.append(temp!.val)
+            temp = temp?.next
+        }
+        
+        print(elements)
     }
 }
 ```
