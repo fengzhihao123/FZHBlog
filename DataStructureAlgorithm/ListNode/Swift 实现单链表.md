@@ -1,6 +1,6 @@
 ## Swift 实现链表
 
-### 链表的定义
+### 单链表的定义
 ```
 class LinkList<E: Equatable> {
     var count = 0
@@ -21,12 +21,30 @@ class LinkList<E: Equatable> {
         }
     }
     
-    // MARK - 查找
+    // 是否包含 element 
     func contains(_ element: E) -> Bool {
         return getIndex(element) != nil
     }
     
-    // MARK - 私有方法
+    // 判断是否有环
+    func hasCycle() -> Bool {
+        if first == nil || first?.next == nil {
+            return false
+        }
+        
+        var slow = first
+        var fast = first?.next
+        while slow?.val != fast?.val {
+            if fast == nil || fast?.next == nil {
+                return false
+            }
+            slow = slow?.next
+            fast = fast?.next?.next
+        }
+        return true
+    }
+    
+    // 根据元素获取 index
     private func getIndex(_ element: E) -> Int? {
         let temp = first
         var curIndex = 0
@@ -40,7 +58,8 @@ class LinkList<E: Equatable> {
         }
         return nil
     }
-    
+
+    //根据 index 获取节点
     private func getNode(at i: Int) -> LinkNode<E> {
         if i > count { fatalError("out of Range") }
         var curNode = first
@@ -56,8 +75,8 @@ class LinkList<E: Equatable> {
 
 #### 移除操作
 ```
+ // MARK - 移除
 extension LinkList {
-    // MARK - 移除
     func remove(_ deleteElement: E) -> E {
         guard let i = getIndex(deleteElement) else { fatalError("Not Found") }
         
@@ -94,8 +113,8 @@ extension LinkList {
 
 #### 添加操作
 ```
+// MARK - 添加
 extension LinkList {
-    // MARK - 添加
     func append(_ newElement: E) {
         let node = LinkNode(newElement, next: nil)
         
