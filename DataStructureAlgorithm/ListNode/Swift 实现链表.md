@@ -1,5 +1,6 @@
 ## Swift 实现链表
 ```
+/// L链表
 class LinkNode<E: Equatable>: Equatable {
     var val: E
     var next: LinkNode?
@@ -18,64 +19,98 @@ class LinkNode<E: Equatable>: Equatable {
  参考 API 命名规范：insert(_ newElement: Element, at i: Int)
  */
 class LinkList<E: Equatable> {
-    var size = 0
-    var head: LinkNode<E>?
+    var count = 0
     
-    func append(_ newNode: LinkNode<E>) {
-        if head == nil {
-            head = newNode
-        } else {
-            let lastNode = getNode(at: size - 1)
-            lastNode.next = newNode
-        }
-        size += 1
-    }
+    private(set) var first: LinkNode<E>?
+    var last: LinkNode<E>? { getNode(at: count - 1) }
     
-    func add(_ newNode: LinkNode<E>, at index: Int) {
-        if index == 0 {
-            newNode.next = head
-            head = newNode
-        } else {
-            let preNode = getNode(at: index - 1)
-            newNode.next = preNode.next
-            preNode.next = newNode
+    var isEmpty: Bool { count == 0 }
+    
+    subscript(index: Int) -> E {
+        get {
+            return getNode(at: index).val
         }
         
-        size += 1
+        set(newValue) {
+            let node = getNode(at: index)
+            node.val = newValue
+        }
     }
     
-    func remove(_ deleteNode: LinkNode<E>) -> E {
-        guard let index = getIndex(deleteNode) else { fatalError("Not Found") }
-        let preNode = getNode(at: index)
+    // MARK - 添加
+    func append(_ newElement: E) {
+        let node = LinkNode(newElement, next: nil)
+        
+        if first == nil {
+            first = node
+        } else {
+            let lastNode = getNode(at: count - 1)
+            lastNode.next = node
+        }
+        count += 1
+    }
+
+    func append(contentsOf newElements: [E]) {
+        
+    }
+    
+    func insert(_ newElement: E, at i: Int) {
+        let node = LinkNode(newElement, next: nil)
+        
+        if i == 0 {
+            node.next = first
+            first = node
+        } else {
+            let preNode = getNode(at: i - 1)
+            node.next = preNode.next
+            preNode.next = node
+        }
+        
+        count += 1
+    }
+    
+    // MARK - 移除
+    
+    func remove(_ deleteElement: E) -> E {
+        let deleteNode = LinkNode(deleteElement, next: nil)
+        
+        guard let i = getIndex(deleteNode) else { fatalError("Not Found") }
+        let preNode = getNode(at: i)
         preNode.next = deleteNode.next
-        size -= 1
+        count -= 1
         
-        return deleteNode.val
+        return deleteElement
     }
     
-    func remove(at index: Int) -> E {
-        let removeVal = getNode(at: index).val
+    func remove(at i: Int) -> E {
+        let removeVal = getNode(at: i).val
+        if i == 0 {
+            first = first?.next
+        } else {
+            let preNode = getNode(at: i - 1)
+            preNode.next = preNode.next?.next
+        }
         
-        let preNode = getNode(at: index - 1)
-        preNode.next = preNode.next?.next
-        size -= 1
-        
+        count -= 1
         return removeVal
     }
     
-    func get(at index: Int) -> E {
-        return getNode(at: index).val
+    func removeFirst() {
+        remove(at: 0)
     }
     
-    func set(_ newElement: E, at index: Int) -> E {
-        let node = getNode(at: index)
-        let old = node.val
-        node.val = newElement
-        return old
+    func removeLast() {
+        remove(at: count - 1)
     }
     
+    func removeAll() {
+        first = nil
+        count = 0
+    }
+    
+    // MARK - 私有方法
     private func getIndex(_ node: LinkNode<E>) -> Int? {
-        let temp = head
+        let temp = first
         var curIndex = 0
         
         while temp != nil {
@@ -87,25 +122,20 @@ class LinkList<E: Equatable> {
         return nil
     }
     
-    private func getNode(at index: Int) -> LinkNode<E> {
-        if index > size { fatalError("out of range") }
-        var curNode = head
+    private func getNode(at i: Int) -> LinkNode<E> {
+        if i > count { fatalError("out of Range") }
+        var curNode = first
         
-        for _ in 0..<index {
+        for _ in 0..<i {
             curNode = curNode?.next
         }
         return curNode!
-    }
-    
-    func clear() {
-        head = nil
-        size = 0
     }
 }
 
 extension LinkList {
     func printAllLinkNode() {
-        var temp = head
+        var temp = first
         var elements = [E]()
         
         while temp != nil {
@@ -116,13 +146,4 @@ extension LinkList {
         print(elements)
     }
 }
-
-
-let link1 = LinkList<String>()
-link1.append(LinkNode("1", next: nil))
-link1.append(LinkNode("2", next: nil))
-link1.append(LinkNode("3", next: nil))
-link1.printAllLinkNode()
-link1.remove(at: 2)
-link1.printAllLinkNode()
 ```
