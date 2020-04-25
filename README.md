@@ -13,3 +13,7 @@
 
 ### 链表
 * [链表的 Swift 实现](https://github.com/fengzhihao123/FZHBlog/blob/master/DataStructureAlgorithm/ListNode/Swift%20实现单链表.md)
+
+## 读书笔记
+
+* [计算机是怎样跑起来的]()
