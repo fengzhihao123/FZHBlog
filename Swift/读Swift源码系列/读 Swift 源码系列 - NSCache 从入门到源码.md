@@ -1,4 +1,26 @@
-## 读 Swift 源码系列 - NSCache 从入门到源码
+# 读 Swift 源码系列 - NSCache 从入门到源码
+
+ 
+ ## 如何使用
+ 通常用它来缓存常用数据，提升性能。
+ 它和 Dictionary 很像，但有以下几个不同点：
+ * 自动移除缓存，保证系统的可用内存空间
+ * 线程安全
+ * 它不会拷贝 key
+ 
+ 可配置的属性：
+ * name
+ * countLimit
+ * totalCostLimit
+ * evictsObjectsWithDiscardedContent
+ 
+ 可用 API：
+ * object(forKey:)
+ * setObject(_:forKey:)
+ * setObject(_:forKey:cost:)
+ * removeObject(forKey:)
+ * removeAllObjects()
+ 
 
 * FIFO
 * LFU 
