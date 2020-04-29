@@ -12,8 +12,9 @@
  我们需要给它添加名字。而对于匿名函数，则不需要给它命名了。
  
  ## 匿名函数
- 
  ### 定义
+ * The parameters in closure expression syntax can be in-out parameters, but they can’t have a default value.
+ 
  Closure expression syntax has the following general form:
 
  { (parameters) -> return type in
