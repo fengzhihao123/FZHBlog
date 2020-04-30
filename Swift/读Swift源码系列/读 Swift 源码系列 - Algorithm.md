@@ -1,4 +1,4 @@
-## Algorithm.md
+## Algorithm.swift
 ## min
 
 ### min - 两个参数
