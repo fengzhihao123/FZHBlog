@@ -20,6 +20,7 @@
 
 ### Leetcode
 * [Easy - 移除元素](https://github.com/fengzhihao123/FZHBlog/blob/master/DataStructureAlgorithm/Leetcode%20-%20Easy%20-%20%20移除元素.md)
+* [Easy - 搜索插入位置](https://github.com/fengzhihao123/FZHBlog/blob/master/DataStructureAlgorithm/Leetcode%20-%20Easy%20-%20搜索插入位置.md)
 
 ## 读书笔记
 
