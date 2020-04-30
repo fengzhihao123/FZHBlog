@@ -9,6 +9,8 @@
 * [第二章 - 基本类型及常量和变量](https://github.com/fengzhihao123/FZHBlog/blob/master/Swift/零基础入门Swift/第二章%20-%20基本类型及变量和常量.md)
 * [第三章 - 集合类型](https://github.com/fengzhihao123/FZHBlog/blob/master/Swift/零基础入门Swift/第三章%20-%20集合类型：Array、Dictionary、Set.md)
 * [第四章 - 控制语句和逻辑操作符](https://github.com/fengzhihao123/FZHBlog/blob/master/Swift/零基础入门Swift/第四章%20-%20控制语句和逻辑操作符.md)
+* [第五章 - 函数](https://github.com/fengzhihao123/FZHBlog/blob/master/Swift/零基础入门Swift/第五章%20-%20函数.md)
+* [第六章 - 匿名函数](https://github.com/fengzhihao123/FZHBlog/blob/master/Swift/零基础入门Swift/第五章%20-%20函数.md)
 
 ## Objective-C
 * [关于 NSObject 的一些总结](https://github.com/fengzhihao123/FZHBlog/blob/master/Objective-C/关于%20NSObject%20的一些总结.md)
