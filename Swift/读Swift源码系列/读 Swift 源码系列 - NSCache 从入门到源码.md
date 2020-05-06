@@ -26,6 +26,31 @@
 * LRU 
 * MRU 
 
+### NSCache 使用的为 LFU 算法
+```
+// 通过下面的代码可以得出，它是通过使用次数来淘汰的
+let cache = NSCache<NSString, NSString>()
+cache.countLimit = 3
+cache.setObject("10", forKey: "key1")
+cache.object(forKey: "key1")
+cache.object(forKey: "key1")
+cache.object(forKey: "key1")
+
+cache.setObject("20", forKey: "key2")
+cache.object(forKey: "key2")
+
+cache.setObject("30", forKey: "key3")
+cache.object(forKey: "key3")
+
+cache.setObject("40", forKey: "key4")
+cache.setObject("50", forKey: "key5")
+
+print(cache.object(forKey: "key1"))
+// nil
+print(cache.object(forKey: "key2"))
+// nil
+print(cache.object(forKey: "key3"))
+```
 
 先进先出算法（FIFO）：FIFO是英文First In First Out 的缩写，是一种先进先出的数据缓存器，他与普通存储器的区别是没有外部读写地址线，这样使用起来非常简单，但缺点就是只能顺序写入数据，顺序的读出数据，其数据地址由内部读写指针自动加1完成，不能像普通存储器那样可以由地址线决定读取或写入某个指定的地址。
 
