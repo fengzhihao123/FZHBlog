@@ -18,7 +18,7 @@
 * [第四章 - 控制语句和逻辑操作符](https://github.com/fengzhihao123/FZHBlog/blob/master/Swift/零基础入门Swift/第四章%20-%20控制语句和逻辑操作符.md)
 * [第五章 - 函数](https://github.com/fengzhihao123/FZHBlog/blob/master/Swift/零基础入门Swift/第五章%20-%20函数.md)
 * [第六章 - 对象的世界](https://github.com/fengzhihao123/FZHBlog/blob/master/Swift/零基础入门Swift/第六章%20-%20对象的世界.md)
-* [第七章 - 对象的世界](https://github.com/fengzhihao123/FZHBlog/blob/master/Swift/零基础入门Swift/第六章%20-%20对象的世界.md)
+* [第七章 - 匿名函数（Closure）](https://github.com/fengzhihao123/FZHBlog/blob/master/Swift/零基础入门Swift/第七章%20-%20匿名函数（Closure）.md)
 
 ## Objective-C
 * [关于 NSObject 的一些总结](https://github.com/fengzhihao123/FZHBlog/blob/master/Objective-C/关于%20NSObject%20的一些总结.md)
