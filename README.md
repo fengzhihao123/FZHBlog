@@ -1,5 +1,9 @@
 # FZHBlog
 
+
+* [每日练习](https://github.com/fengzhihao123/FZHBlog/blob/master/DataStructureAlgorithm/每日算法练习.md)
+
+
 ## Swift
 * [Type Erase(类型擦除)]()
 * [Struct & Class]()
