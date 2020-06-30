@@ -85,7 +85,7 @@ func process_integers(_ start: UnsafePointer<CInt>!, _ count: Int)
 
 ![map](https://github.com/fengzhihao123/FZHBlog/blob/master/images/c-swift-map.png)
 ### Array 和 String 新增两个 unsafe 的初始化方法
-
+![New API](https://github.com/fengzhihao123/FZHBlog/blob/master/images/new_api.png)
 ### 总结
 * 尽量少使用 unsafe，若使用 unsafe 的接口，谨遵规则每个接口的规则
 * 多测试
