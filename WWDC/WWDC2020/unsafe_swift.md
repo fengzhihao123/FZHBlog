@@ -92,4 +92,4 @@ func process_integers(_ start: UnsafePointer<CInt>!, _ count: Int)
 
 
 * [WWDC - Video](https://developer.apple.com/videos/play/wwdc2020/10648)
-* [](https://wwdcnotes.com/notes/wwdc20/10648/)
+* [Link](https://wwdcnotes.com/notes/wwdc20/10648/)
