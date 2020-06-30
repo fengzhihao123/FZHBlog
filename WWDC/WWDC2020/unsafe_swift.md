@@ -82,6 +82,8 @@ void process_integers(const int *start, size_t count);
 // Swift:
 func process_integers(_ start: UnsafePointer<CInt>!, _ count: Int)
 ```
+
+![map](https://github.com/fengzhihao123/FZHBlog/blob/master/images/c-swift-map.png)
 ### Array 和 String 新增两个 unsafe 的初始化方法
 
 ### 总结
