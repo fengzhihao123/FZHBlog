@@ -6,6 +6,7 @@
 ## Swift
 * [Type Erase(类型擦除)]()
 * [Struct & Class]()
+* [SHA256-Swift](https://github.com/fengzhihao123/FZHBlog/blob/master/Swift/SHA256-Swift.md)
 
 ## Swift 读源码系列
 ### Array
