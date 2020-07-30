@@ -6,6 +6,7 @@
 ## Swift
 * [Type Erase(类型擦除)]()
 * [Struct & Class]()
+* [SHA256-Swift](https://github.com/fengzhihao123/FZHBlog/blob/master/Swift/SHA256-Swift.md)
 
 ## Swift 读源码系列
 ### Array
@@ -34,7 +35,7 @@
 
 ## WWDC
 ### WWDC 2020
-* [Unsafe Swift]()
+* [Unsafe Swift](https://github.com/fengzhihao123/FZHBlog/blob/master/WWDC/WWDC2020/unsafe_swift.md)
 
 ## 读书笔记
 * [计算机是怎样跑起来的](https://github.com/fengzhihao123/FZHBlog/blob/master/ReadBookNote/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%98%AF%E6%80%8E%E6%A0%B7%E8%B7%91%E8%B5%B7%E6%9D%A5%E7%9A%84.md) 2020.04.25
