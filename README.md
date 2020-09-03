@@ -10,7 +10,7 @@
 ### Swift
 * [Type Erase(类型擦除)]()
 * [Struct & Class]()
-* [Final 关键字](https://developer.apple.com/swift/blog/?id=27)
+* [Final 关键字](https://github.com/fengzhihao123/FZHBlog/blob/master/iOS/Swift/final%20关键字的理解.md)
 * [加密算法 - SHA256 - Swift](https://github.com/fengzhihao123/FZHBlog/blob/master/iOS/Swift/SHA256-Swift.md)
 
 ### Swift 读源码系列
