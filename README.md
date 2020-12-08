@@ -33,6 +33,7 @@
 ### WWDC
 #### WWDC 2020
 * [Unsafe Swift](https://github.com/fengzhihao123/FZHBlog/blob/master/iOS/WWDC/WWDC2020/unsafe_swift.md)
+* [List in UICollectionView](https://github.com/fengzhihao123/FZHBlog/blob/master/iOS/WWDC/WWDC2020/Lists%20in%20UICollectionView.md)
 
 ### UI
 [通过functionBuilder 简化 UIAlertController 的调用](https://github.com/fengzhihao123/FZHBlog/blob/master/iOS/UI/通过functionBuilder%20简化%20UIAlertController%20的调用.md)
