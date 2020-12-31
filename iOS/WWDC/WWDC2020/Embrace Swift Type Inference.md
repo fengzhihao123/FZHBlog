@@ -15,7 +15,9 @@ let x: String = ""
 
 * 对于复杂的类型推断编译器是如何替换的：
     - Before
+    ![image](https://github.com/fengzhihao123/FZHBlog/blob/master/images/embrace_swift_type_inference_before.png "类型推断前")
     - After
+    ![image](https://github.com/fengzhihao123/FZHBlog/blob/master/images/embrace_swift_type_inference_after.png "类型推断后")
 * 类型推断的好处：
     - 代码更加简洁、易读。
     - 编码更加简单、高效。
