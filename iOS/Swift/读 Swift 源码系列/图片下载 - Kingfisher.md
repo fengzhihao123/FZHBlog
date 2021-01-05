@@ -1,6 +1,9 @@
 ### 异步加载图片
+
 ### 内存和磁盘缓存图片
+
 ### 图片绘制
+
 ### 如何实现支持的特性
 * 异步下载缓存图片
     - 下载图片的函数调用栈：setImage -> retrieveImage -> loadAndCacheImage -> downloadImage -> resume
