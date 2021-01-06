@@ -39,6 +39,7 @@
 * [List in UICollectionView](https://github.com/fengzhihao123/FZHBlog/blob/master/iOS/WWDC/WWDC2020/Lists%20in%20UICollectionView.md)
 * [Eliminate animation hitches with XCTest](https://github.com/fengzhihao123/FZHBlog/blob/master/iOS/WWDC/WWDC2020/Eliminate%20animation%20hitches%20with%20XCTest.md)
 * [Embrace Swift Type Inference](https://github.com/fengzhihao123/FZHBlog/blob/master/iOS/WWDC/WWDC2020/Embrace%20Swift%20Type%20Inference.md)
+* [Why is mu app getting killed](https://github.com/fengzhihao123/FZHBlog/blob/master/iOS/WWDC/WWDC2020/why%20is%20my%20app%20getting%20killed.md)
 
 ### UI
 [通过functionBuilder 简化 UIAlertController 的调用](https://github.com/fengzhihao123/FZHBlog/blob/master/iOS/UI/通过functionBuilder%20简化%20UIAlertController%20的调用.md)
