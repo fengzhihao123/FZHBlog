@@ -4,7 +4,7 @@
 iPhone 的频率是 60 hz，平均每一帧的时间是 16.67 ms，当 APP 中的帧时间占用大于 16.67 ms 时就会造成视觉上的卡顿。
 
 * 通过两种方式来表示：
-    - HItch time：帧延迟显示的时间(ms)。
+    - Hitch time：帧延迟显示的时间(ms)。
     - Hitch ratio：每秒延迟的时间，ms/s。
 * Hitch ratio 的分级：
     - Good: ≤ 5ms/s
