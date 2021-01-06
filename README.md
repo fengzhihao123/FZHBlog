@@ -19,6 +19,7 @@
 ### Swift
 * [Type Erase(类型擦除)]()
 * [Struct & Class]()
+* [Swift 基本类型所占字节数](https://github.com/fengzhihao123/FZHBlog/blob/master/iOS/Swift/Swift%20基本类型所占字节数.md)
 * [Final 关键字](https://github.com/fengzhihao123/FZHBlog/blob/master/iOS/Swift/final%20关键字的理解.md)
 * [加密算法 - SHA256 - Swift](https://github.com/fengzhihao123/FZHBlog/blob/master/iOS/Swift/SHA256-Swift.md)
 * [关于 Swift 访问控制的总结](https://github.com/fengzhihao123/FZHBlog/blob/master/iOS/Swift/关于%20Swift%20访问控制的总结.md)
