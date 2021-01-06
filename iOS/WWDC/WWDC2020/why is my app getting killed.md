@@ -49,3 +49,19 @@ Crashes 通常由以下三种情况造成：
     - 保存当前 view controller 的状态。
     - 保存多媒体播放状态。
     - 保存 textfield 中的内容。
+
+### 后台任务超时
+* UIApplication.beginBackgroundTask(expirationHandler:)/UIApplication.endBackgroundTask(_:) 用来执行后台任务。
+* App 一旦进入后台就会有一个 30s 的计时器，30s 之后App会被系统干掉，所以后台的任务应在 30s 内完成。
+* 可以通过 MXBackgroundEixtData 来显示后台挂起的频率。
+
+* 如何规避后台任务超时？
+    - 使用 `beginBackgroundTask(withName:expirationHandler:)` 来代替 `beginBackgroundTask(expirationHandler:)`，第一个函数的好处是能够在 App 后台多个任务中将可能没有结束的那个隔离出来。
+
+### New MetricKit API
+![image]()
+### 总结
+* 通过减少 App 对 CPU 和内存的使用，来降低 App 被系统干掉的风险。
+* 即使 App 占用内存降到 50MB 一下，依然可能会被系统干掉。
+* App 进入后台执行任务时不应超过 30s。
+* 保存 App 进入后台时的各种状态以提供用户体验。
