@@ -59,7 +59,7 @@ Crashes 通常由以下三种情况造成：
     - 使用 `beginBackgroundTask(withName:expirationHandler:)` 来代替 `beginBackgroundTask(expirationHandler:)`，第一个函数的好处是能够在 App 后台多个任务中将可能没有结束的那个隔离出来。
 
 ### New MetricKit API
-![image]()
+![image](https://github.com/fengzhihao123/FZHBlog/blob/master/images/new_metrickit_api.png)
 ### 总结
 * 通过减少 App 对 CPU 和内存的使用，来降低 App 被系统干掉的风险。
 * 即使 App 占用内存降到 50MB 一下，依然可能会被系统干掉。
