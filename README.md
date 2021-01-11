@@ -24,6 +24,7 @@
 * [加密算法 - SHA256 - Swift](https://github.com/fengzhihao123/FZHBlog/blob/master/iOS/Swift/SHA256-Swift.md)
 * [关于 Swift 访问控制的总结](https://github.com/fengzhihao123/FZHBlog/blob/master/iOS/Swift/关于%20Swift%20访问控制的总结.md)
 * [快速了解 Swift](https://github.com/fengzhihao123/FZHBlog/blob/master/iOS/Swift/快速了解%20Swift.md)
+* [如何迭代 Swift 中枚举的所有 case](https://github.com/fengzhihao123/FZHBlog/blob/master/iOS/Swift/如何迭代%20Swift%20中枚举的所有case.md)
 
 ### Swift 读源码系列
 * [Array.swift](https://github.com/fengzhihao123/FZHBlog/blob/master/iOS/Swift/%E8%AF%BBSwift%E6%BA%90%E7%A0%81%E7%B3%BB%E5%88%97/%E8%AF%BB%20Swift%20%E6%BA%90%E7%A0%81%E7%B3%BB%E5%88%97%20-%20Array.md) 
