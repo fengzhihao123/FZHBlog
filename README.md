@@ -16,6 +16,7 @@
 
 ## iOS
 * [如何使用断点来判断ViewController内存泄漏](https://github.com/fengzhihao123/FZHBlog/blob/master/iOS/Objective-C/如何使用断点来判断ViewController内存泄漏.md)
+
 ### Swift
 * [Type Erase(类型擦除)]()
 * [Struct & Class]()
@@ -26,7 +27,7 @@
 * [快速了解 Swift](https://github.com/fengzhihao123/FZHBlog/blob/master/iOS/Swift/快速了解%20Swift.md)
 * [如何迭代 Swift 中枚举的所有 case](https://github.com/fengzhihao123/FZHBlog/blob/master/iOS/Swift/如何迭代%20Swift%20中枚举的所有case.md)
 * [Swift 什么情况会发生内存访问冲突](https://github.com/fengzhihao123/FZHBlog/blob/master/iOS/Swift/Swift%20什么情况会发生内存访问冲突.md)
-
+* [Swift 的属性观察者](https://github.com/fengzhihao123/FZHBlog/blob/master/iOS/Swift/Swift%20的属性观察者.md)
 
 ### Swift 读源码系列
 
