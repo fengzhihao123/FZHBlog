@@ -11,6 +11,8 @@
 * [计算机网络自顶向下方法](https://github.com/fengzhihao123/FZHBlog/blob/master/ReadBookNote/计算机网络自顶向下.md) 2020.12.05
 
 ## 数据结构
+### 链表
+* [初始链表](https://github.com/fengzhihao123/FZHBlog/blob/master/DataStructureAlgorithm/Datastructure/初识链表.md)
 
 ## 计算机网络
 
