@@ -76,7 +76,7 @@ public extension Delegated1 {
 }
 ```
 
-首先，来分析一下 Delegated1 类。可以看到它使用了 @propertyWrapper 关键字来修饰，@propertyWrapper 的作用简单来说就是用来封装平常的模板代码。[关于@propertyWrapper更详细的介绍可以看这里]()。
+首先，来分析一下 Delegated1 类。可以看到它使用了 @propertyWrapper 关键字来修饰，@propertyWrapper 的作用简单来说就是用来封装平常的模板代码。[关于@propertyWrapper更详细的介绍可以看这里](https://github.com/fengzhihao123/FZHBlog/blob/master/iOS/Swift/通过%20Property%20Wrappers%20简化代码.md)。
 
 接着，它通过定义 Input 来实现参数支持泛型，然后声明了 callback 属性来存储 Closure。对于 wrappedValue 和 projectedValue 则是重写的 @propertyWrapper 的内置参数。
 
