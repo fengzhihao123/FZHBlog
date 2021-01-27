@@ -12,7 +12,7 @@
 
 ## 数据结构
 ### 链表
-* [初始链表](https://github.com/fengzhihao123/FZHBlog/blob/master/DataStructureAlgorithm/Datastructure/初识链表.md)
+* [初识链表](https://github.com/fengzhihao123/FZHBlog/blob/master/DataStructureAlgorithm/Datastructure/初识链表.md)
 
 ## 计算机网络
 ### 读书笔记
