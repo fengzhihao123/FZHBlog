@@ -7,14 +7,17 @@
 * [一生自在](https://github.com/fengzhihao123/FZHBlog/blob/master/ReadBookNote/一生自在.md) 2020.05.05
 * [重构](https://github.com/fengzhihao123/FZHBlog/blob/master/ReadBookNote/重构.md) 2020.08.20
 * 谈美 2020.10.01
-* 网络是怎样连接的 2020.09.10
-* [计算机网络自顶向下方法](https://github.com/fengzhihao123/FZHBlog/blob/master/ReadBookNote/计算机网络自顶向下.md) 2020.12.05
+
 
 ## 数据结构
 ### 链表
 * [初始链表](https://github.com/fengzhihao123/FZHBlog/blob/master/DataStructureAlgorithm/Datastructure/初识链表.md)
 
 ## 计算机网络
+### 读书笔记
+* 网络是怎样连接的 2020.09.10
+* [计算机网络自顶向下方法](https://github.com/fengzhihao123/FZHBlog/blob/master/ReadBookNote/计算机网络自顶向下.md) 2020.12.05
+### 知识点总结
 
 ## iOS
 * [如何使用断点来判断ViewController内存泄漏](https://github.com/fengzhihao123/FZHBlog/blob/master/iOS/Objective-C/如何使用断点来判断ViewController内存泄漏.md)
